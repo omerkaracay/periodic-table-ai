@@ -63,6 +63,2242 @@
       "commonUses": ["Batteries", "Psychiatric medications", "Nuclear fusion"],
       "group": 1,
       "period": 2
+    },
+    {
+      "atomicNumber": 4,
+      "symbol": "Be",
+      "name": "Beryllium",
+      "atomicWeight": 9.0121831,
+      "category": "alkaline earth metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[He]2s²",
+      "electronegativity": 1.57,
+      "density": 1.85,
+      "meltingPoint": 1287,
+      "boilingPoint": 2470,
+      "discovery": {
+        "year": 1797,
+        "discoverer": "Louis Nicolas Vauquelin"
+      },
+      "commonUses": [
+        "X-ray windows",
+        "Aerospace components",
+        "Nuclear reactors"
+      ],
+      "group": 2,
+      "period": 2
+    },
+    {
+      "atomicNumber": 5,
+      "symbol": "B",
+      "name": "Boron",
+      "atomicWeight": 10.81,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[He]2s²2p¹",
+      "electronegativity": 2.04,
+      "density": 2.34,
+      "meltingPoint": 2075,
+      "boilingPoint": 4000,
+      "discovery": {
+        "year": 1808,
+        "discoverer": "Joseph Louis Gay-Lussac"
+      },
+      "commonUses": ["Fiberglass", "Detergents", "Semiconductors"],
+      "group": 13,
+      "period": 2
+    },
+    {
+      "atomicNumber": 6,
+      "symbol": "C",
+      "name": "Carbon",
+      "atomicWeight": 12.011,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[He]2s²2p²",
+      "electronegativity": 2.55,
+      "density": 2.267,
+      "meltingPoint": 3550,
+      "boilingPoint": 4827,
+      "discovery": {
+        "year": -3750,
+        "discoverer": "Ancient Egyptians and Sumerians"
+      },
+      "commonUses": [
+        "Steel production",
+        "Diamond jewelry",
+        "Graphite in pencils"
+      ],
+      "group": 14,
+      "period": 2
+    },
+    {
+      "atomicNumber": 7,
+      "symbol": "N",
+      "name": "Nitrogen",
+      "atomicWeight": 14.007,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[He]2s²2p³",
+      "electronegativity": 3.04,
+      "density": 0.001251,
+      "meltingPoint": -210.1,
+      "boilingPoint": -195.79,
+      "discovery": {
+        "year": 1772,
+        "discoverer": "Daniel Rutherford"
+      },
+      "commonUses": ["Fertilizers", "Refrigeration", "Food packaging"],
+      "group": 15,
+      "period": 2
+    },
+    {
+      "atomicNumber": 8,
+      "symbol": "O",
+      "name": "Oxygen",
+      "atomicWeight": 15.999,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[He]2s²2p⁴",
+      "electronegativity": 3.44,
+      "density": 0.001429,
+      "meltingPoint": -218.79,
+      "boilingPoint": -182.962,
+      "discovery": {
+        "year": 1774,
+        "discoverer": "Joseph Priestley"
+      },
+      "commonUses": ["Breathing", "Medical treatment", "Steel production"],
+      "group": 16,
+      "period": 2
+    },
+    {
+      "atomicNumber": 9,
+      "symbol": "F",
+      "name": "Fluorine",
+      "atomicWeight": 18.998403163,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[He]2s²2p⁵",
+      "electronegativity": 3.98,
+      "density": 0.001696,
+      "meltingPoint": -219.62,
+      "boilingPoint": -188.12,
+      "discovery": {
+        "year": 1886,
+        "discoverer": "Henri Moissan"
+      },
+      "commonUses": ["Toothpaste", "Non-stick coatings", "Refrigerants"],
+      "group": 17,
+      "period": 2
+    },
+    {
+      "atomicNumber": 10,
+      "symbol": "Ne",
+      "name": "Neon",
+      "atomicWeight": 20.1797,
+      "category": "noble gas",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[He]2s²2p⁶",
+      "electronegativity": null,
+      "density": 0.0008999,
+      "meltingPoint": -248.59,
+      "boilingPoint": -246.08,
+      "discovery": {
+        "year": 1898,
+        "discoverer": "William Ramsay"
+      },
+      "commonUses": ["Neon signs", "Lasers", "Cryogenic refrigeration"],
+      "group": 18,
+      "period": 2
+    },
+    {
+      "atomicNumber": 11,
+      "symbol": "Na",
+      "name": "Sodium",
+      "atomicWeight": 22.98976928,
+      "category": "alkali metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ne]3s¹",
+      "electronegativity": 0.93,
+      "density": 0.971,
+      "meltingPoint": 97.72,
+      "boilingPoint": 883,
+      "discovery": {
+        "year": 1807,
+        "discoverer": "Humphry Davy"
+      },
+      "commonUses": ["Table salt", "Street lights", "Nuclear reactors"],
+      "group": 1,
+      "period": 3
+    },
+    {
+      "atomicNumber": 12,
+      "symbol": "Mg",
+      "name": "Magnesium",
+      "atomicWeight": 24.305,
+      "category": "alkaline earth metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ne]3s²",
+      "electronegativity": 1.31,
+      "density": 1.738,
+      "meltingPoint": 650,
+      "boilingPoint": 1090,
+      "discovery": {
+        "year": 1755,
+        "discoverer": "Joseph Black"
+      },
+      "commonUses": [
+        "Lightweight alloys",
+        "Fireworks",
+        "Photography flash bulbs"
+      ],
+      "group": 2,
+      "period": 3
+    },
+    {
+      "atomicNumber": 13,
+      "symbol": "Al",
+      "name": "Aluminum",
+      "atomicWeight": 26.9815384,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ne]3s²3p¹",
+      "electronegativity": 1.61,
+      "density": 2.7,
+      "meltingPoint": 660.32,
+      "boilingPoint": 2519,
+      "discovery": {
+        "year": 1825,
+        "discoverer": "Hans Christian Ørsted"
+      },
+      "commonUses": [
+        "Aircraft construction",
+        "Packaging",
+        "Building materials"
+      ],
+      "group": 13,
+      "period": 3
+    },
+    {
+      "atomicNumber": 14,
+      "symbol": "Si",
+      "name": "Silicon",
+      "atomicWeight": 28.085,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ne]3s²3p²",
+      "electronegativity": 1.9,
+      "density": 2.329,
+      "meltingPoint": 1414,
+      "boilingPoint": 3265,
+      "discovery": {
+        "year": 1824,
+        "discoverer": "Jöns Jacob Berzelius"
+      },
+      "commonUses": ["Electronics", "Solar cells", "Glass production"],
+      "group": 14,
+      "period": 3
+    },
+    {
+      "atomicNumber": 15,
+      "symbol": "P",
+      "name": "Phosphorus",
+      "atomicWeight": 30.973761998,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ne]3s²3p³",
+      "electronegativity": 2.19,
+      "density": 1.823,
+      "meltingPoint": 44.15,
+      "boilingPoint": 280.5,
+      "discovery": {
+        "year": 1669,
+        "discoverer": "Hennig Brand"
+      },
+      "commonUses": ["Fertilizers", "Matches", "Detergents"],
+      "group": 15,
+      "period": 3
+    },
+    {
+      "atomicNumber": 16,
+      "symbol": "S",
+      "name": "Sulfur",
+      "atomicWeight": 32.06,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ne]3s²3p⁴",
+      "electronegativity": 2.58,
+      "density": 2.07,
+      "meltingPoint": 115.21,
+      "boilingPoint": 444.72,
+      "discovery": {
+        "year": -2000,
+        "discoverer": "Ancient civilizations"
+      },
+      "commonUses": ["Gunpowder", "Sulfuric acid", "Vulcanization of rubber"],
+      "group": 16,
+      "period": 3
+    },
+    {
+      "atomicNumber": 17,
+      "symbol": "Cl",
+      "name": "Chlorine",
+      "atomicWeight": 35.45,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[Ne]3s²3p⁵",
+      "electronegativity": 3.16,
+      "density": 0.003214,
+      "meltingPoint": -101.5,
+      "boilingPoint": -34.04,
+      "discovery": {
+        "year": 1774,
+        "discoverer": "Carl Wilhelm Scheele"
+      },
+      "commonUses": ["Water purification", "PVC production", "Disinfectants"],
+      "group": 17,
+      "period": 3
+    },
+    {
+      "atomicNumber": 18,
+      "symbol": "Ar",
+      "name": "Argon",
+      "atomicWeight": 39.948,
+      "category": "noble gas",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[Ne]3s²3p⁶",
+      "electronegativity": null,
+      "density": 0.0017837,
+      "meltingPoint": -189.35,
+      "boilingPoint": -185.85,
+      "discovery": {
+        "year": 1894,
+        "discoverer": "Lord Rayleigh"
+      },
+      "commonUses": ["Light bulbs", "Welding", "Double-paned windows"],
+      "group": 18,
+      "period": 3
+    },
+    {
+      "atomicNumber": 19,
+      "symbol": "K",
+      "name": "Potassium",
+      "atomicWeight": 39.0983,
+      "category": "alkali metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]4s¹",
+      "electronegativity": 0.82,
+      "density": 0.862,
+      "meltingPoint": 63.38,
+      "boilingPoint": 759,
+      "discovery": {
+        "year": 1807,
+        "discoverer": "Humphry Davy"
+      },
+      "commonUses": ["Fertilizers", "Food supplements", "Soap production"],
+      "group": 1,
+      "period": 4
+    },
+    {
+      "atomicNumber": 20,
+      "symbol": "Ca",
+      "name": "Calcium",
+      "atomicWeight": 40.078,
+      "category": "alkaline earth metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]4s²",
+      "electronegativity": 1.0,
+      "density": 1.54,
+      "meltingPoint": 841.9,
+      "boilingPoint": 1484,
+      "discovery": {
+        "year": 1808,
+        "discoverer": "Humphry Davy"
+      },
+      "commonUses": [
+        "Construction (cement)",
+        "Dietary supplements",
+        "Steel making"
+      ],
+      "group": 1,
+      "period": 4
+    },
+    {
+      "atomicNumber": 21,
+      "symbol": "Sc",
+      "name": "Scandium",
+      "atomicWeight": 44.955908,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d¹4s²",
+      "electronegativity": 1.36,
+      "density": 2.985,
+      "meltingPoint": 1541,
+      "boilingPoint": 2830,
+      "discovery": {
+        "year": 1879,
+        "discoverer": "Lars Fredrik Nilson"
+      },
+      "commonUses": ["Aluminum alloys", "High-intensity lamps", "Electronics"],
+      "group": 3,
+      "period": 4
+    },
+    {
+      "atomicNumber": 22,
+      "symbol": "Ti",
+      "name": "Titanium",
+      "atomicWeight": 47.867,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d²4s²",
+      "electronegativity": 1.54,
+      "density": 4.506,
+      "meltingPoint": 1668,
+      "boilingPoint": 3287,
+      "discovery": {
+        "year": 1791,
+        "discoverer": "William Gregor"
+      },
+      "commonUses": ["Aerospace", "Medical implants", "White paint pigment"],
+      "group": 4,
+      "period": 4
+    },
+    {
+      "atomicNumber": 23,
+      "symbol": "V",
+      "name": "Vanadium",
+      "atomicWeight": 50.9415,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d³4s²",
+      "electronegativity": 1.63,
+      "density": 6.11,
+      "meltingPoint": 1910,
+      "boilingPoint": 3407,
+      "discovery": {
+        "year": 1801,
+        "discoverer": "Andrés Manuel del Río"
+      },
+      "commonUses": ["Steel alloys", "Nuclear applications", "Batteries"],
+      "group": 5,
+      "period": 4
+    },
+    {
+      "atomicNumber": 24,
+      "symbol": "Cr",
+      "name": "Chromium",
+      "atomicWeight": 51.9961,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d⁵4s¹",
+      "electronegativity": 1.66,
+      "density": 7.15,
+      "meltingPoint": 1907,
+      "boilingPoint": 2671,
+      "discovery": {
+        "year": 1797,
+        "discoverer": "Louis Nicolas Vauquelin"
+      },
+      "commonUses": ["Stainless steel", "Chrome plating", "Dyes and pigments"],
+      "group": 6,
+      "period": 4
+    },
+    {
+      "atomicNumber": 25,
+      "symbol": "Mn",
+      "name": "Manganese",
+      "atomicWeight": 54.938044,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d⁵4s²",
+      "electronegativity": 1.55,
+      "density": 7.21,
+      "meltingPoint": 1246,
+      "boilingPoint": 2061,
+      "discovery": {
+        "year": 1774,
+        "discoverer": "Carl Wilhelm Scheele"
+      },
+      "commonUses": ["Steel production", "Batteries", "Aluminum alloys"],
+      "group": 7,
+      "period": 4
+    },
+    {
+      "atomicNumber": 26,
+      "symbol": "Fe",
+      "name": "Iron",
+      "atomicWeight": 55.845,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d⁶4s²",
+      "electronegativity": 1.83,
+      "density": 7.874,
+      "meltingPoint": 1538,
+      "boilingPoint": 2862,
+      "discovery": {
+        "year": -3200,
+        "discoverer": "Ancient Egyptians"
+      },
+      "commonUses": ["Steel", "Construction", "Tools and machinery"],
+      "group": 8,
+      "period": 4
+    },
+    {
+      "atomicNumber": 27,
+      "symbol": "Co",
+      "name": "Cobalt",
+      "atomicWeight": 58.933194,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d⁷4s²",
+      "electronegativity": 1.88,
+      "density": 8.9,
+      "meltingPoint": 1495,
+      "boilingPoint": 2927,
+      "discovery": {
+        "year": 1735,
+        "discoverer": "Georg Brandt"
+      },
+      "commonUses": ["Magnets", "Batteries", "Blue pigments"],
+      "group": 9,
+      "period": 4
+    },
+    {
+      "atomicNumber": 28,
+      "symbol": "Ni",
+      "name": "Nickel",
+      "atomicWeight": 58.6934,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d⁸4s²",
+      "electronegativity": 1.91,
+      "density": 8.908,
+      "meltingPoint": 1455,
+      "boilingPoint": 2913,
+      "discovery": {
+        "year": 1751,
+        "discoverer": "Axel Fredrik Cronstedt"
+      },
+      "commonUses": ["Stainless steel", "Batteries", "Coins"],
+      "group": 10,
+      "period": 4
+    },
+    {
+      "atomicNumber": 29,
+      "symbol": "Cu",
+      "name": "Copper",
+      "atomicWeight": 63.546,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d¹⁰4s¹",
+      "electronegativity": 1.9,
+      "density": 8.96,
+      "meltingPoint": 1084.62,
+      "boilingPoint": 2562,
+      "discovery": {
+        "year": -9000,
+        "discoverer": "Prehistoric humans"
+      },
+      "commonUses": ["Electrical wiring", "Plumbing", "Electronics"],
+      "group": 11,
+      "period": 4
+    },
+    {
+      "atomicNumber": 30,
+      "symbol": "Zn",
+      "name": "Zinc",
+      "atomicWeight": 65.38,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d¹⁰4s²",
+      "electronegativity": 1.65,
+      "density": 7.14,
+      "meltingPoint": 419.53,
+      "boilingPoint": 907,
+      "discovery": {
+        "year": 1746,
+        "discoverer": "Andreas Sigismund Marggraf"
+      },
+      "commonUses": ["Galvanization", "Brass production", "Dietary supplement"],
+      "group": 12,
+      "period": 4
+    },
+    {
+      "atomicNumber": 31,
+      "symbol": "Ga",
+      "name": "Gallium",
+      "atomicWeight": 69.723,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d¹⁰4s²4p¹",
+      "electronegativity": 1.81,
+      "density": 5.904,
+      "meltingPoint": 29.76,
+      "boilingPoint": 2204,
+      "discovery": {
+        "year": 1875,
+        "discoverer": "Paul-Émile Lecoq de Boisbaudran"
+      },
+      "commonUses": ["Semiconductors", "LEDs", "Temperature measurement"],
+      "group": 13,
+      "period": 4
+    },
+    {
+      "atomicNumber": 32,
+      "symbol": "Ge",
+      "name": "Germanium",
+      "atomicWeight": 72.63,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d¹⁰4s²4p²",
+      "electronegativity": 2.01,
+      "density": 5.323,
+      "meltingPoint": 938.25,
+      "boilingPoint": 2820,
+      "discovery": {
+        "year": 1886,
+        "discoverer": "Clemens Winkler"
+      },
+      "commonUses": ["Fiber optics", "Infrared optics", "Semiconductors"],
+      "group": 14,
+      "period": 4
+    },
+    {
+      "atomicNumber": 33,
+      "symbol": "As",
+      "name": "Arsenic",
+      "atomicWeight": 74.921595,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d¹⁰4s²4p³",
+      "electronegativity": 2.18,
+      "density": 5.727,
+      "meltingPoint": 817,
+      "boilingPoint": 614,
+      "discovery": {
+        "year": 1250,
+        "discoverer": "Albertus Magnus"
+      },
+      "commonUses": ["Wood preservatives", "Semiconductors", "Pesticides"],
+      "group": 15,
+      "period": 4
+    },
+    {
+      "atomicNumber": 34,
+      "symbol": "Se",
+      "name": "Selenium",
+      "atomicWeight": 78.971,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Ar]3d¹⁰4s²4p⁴",
+      "electronegativity": 2.55,
+      "density": 4.819,
+      "meltingPoint": 221,
+      "boilingPoint": 685,
+      "discovery": {
+        "year": 1817,
+        "discoverer": "Jöns Jacob Berzelius"
+      },
+      "commonUses": ["Photovoltaic cells", "Photocopiers", "Glass production"],
+      "group": 16,
+      "period": 4
+    },
+    {
+      "atomicNumber": 35,
+      "symbol": "Br",
+      "name": "Bromine",
+      "atomicWeight": 79.904,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "liquid",
+      "electronConfiguration": "[Ar]3d¹⁰4s²4p⁵",
+      "electronegativity": 2.96,
+      "density": 3.122,
+      "meltingPoint": -7.2,
+      "boilingPoint": 58.8,
+      "discovery": {
+        "year": 1826,
+        "discoverer": "Antoine Jérôme Balard"
+      },
+      "commonUses": ["Flame retardants", "Photography", "Pesticides"],
+      "group": 17,
+      "period": 4
+    },
+    {
+      "atomicNumber": 36,
+      "symbol": "Kr",
+      "name": "Krypton",
+      "atomicWeight": 83.798,
+      "category": "noble gas",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[Ar]3d¹⁰4s²4p⁶",
+      "electronegativity": null,
+      "density": 0.003733,
+      "meltingPoint": -157.36,
+      "boilingPoint": -153.22,
+      "discovery": {
+        "year": 1898,
+        "discoverer": "William Ramsay"
+      },
+      "commonUses": [
+        "High-powered lamps",
+        "Flash photography",
+        "Laser technology"
+      ],
+      "group": 18,
+      "period": 4
+    },
+    {
+      "atomicNumber": 37,
+      "symbol": "Rb",
+      "name": "Rubidium",
+      "atomicWeight": 85.4678,
+      "category": "alkali metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]5s¹",
+      "electronegativity": 0.82,
+      "density": 1.532,
+      "meltingPoint": 39.31,
+      "boilingPoint": 688,
+      "discovery": {
+        "year": 1861,
+        "discoverer": "Robert Bunsen"
+      },
+      "commonUses": ["Atomic clocks", "Electronics", "Photocells"],
+      "group": 1,
+      "period": 5
+    },
+    {
+      "atomicNumber": 38,
+      "symbol": "Sr",
+      "name": "Strontium",
+      "atomicWeight": 87.62,
+      "category": "alkaline earth metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]5s²",
+      "electronegativity": 0.95,
+      "density": 2.64,
+      "meltingPoint": 777,
+      "boilingPoint": 1382,
+      "discovery": {
+        "year": 1790,
+        "discoverer": "Adair Crawford"
+      },
+      "commonUses": ["Fireworks", "Nuclear batteries", "Ceramics"],
+      "group": 2,
+      "period": 5
+    },
+    {
+      "atomicNumber": 39,
+      "symbol": "Y",
+      "name": "Yttrium",
+      "atomicWeight": 88.90584,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹5s²",
+      "electronegativity": 1.22,
+      "density": 4.469,
+      "meltingPoint": 1526,
+      "boilingPoint": 3345,
+      "discovery": {
+        "year": 1794,
+        "discoverer": "Johan Gadolin"
+      },
+      "commonUses": ["LED lights", "Laser technology", "Cancer treatment"],
+      "group": 3,
+      "period": 5
+    },
+    {
+      "atomicNumber": 40,
+      "symbol": "Zr",
+      "name": "Zirconium",
+      "atomicWeight": 91.224,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d²5s²",
+      "electronegativity": 1.33,
+      "density": 6.506,
+      "meltingPoint": 1855,
+      "boilingPoint": 4409,
+      "discovery": {
+        "year": 1789,
+        "discoverer": "Martin Heinrich Klaproth"
+      },
+      "commonUses": ["Nuclear reactors", "Ceramics", "Chemical equipment"],
+      "group": 4,
+      "period": 5
+    },
+    {
+      "atomicNumber": 41,
+      "symbol": "Nb",
+      "name": "Niobium",
+      "atomicWeight": 92.90637,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d⁴5s¹",
+      "electronegativity": 1.6,
+      "density": 8.57,
+      "meltingPoint": 2477,
+      "boilingPoint": 4744,
+      "discovery": {
+        "year": 1801,
+        "discoverer": "Charles Hatchett"
+      },
+      "commonUses": ["Superconducting magnets", "Nuclear reactors", "Jewelry"],
+      "group": 5,
+      "period": 5
+    },
+    {
+      "atomicNumber": 42,
+      "symbol": "Mo",
+      "name": "Molybdenum",
+      "atomicWeight": 95.95,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d⁵5s¹",
+      "electronegativity": 2.16,
+      "density": 10.28,
+      "meltingPoint": 2623,
+      "boilingPoint": 4639,
+      "discovery": {
+        "year": 1781,
+        "discoverer": "Carl Wilhelm Scheele"
+      },
+      "commonUses": ["Steel alloys", "Electrical contacts", "Lubricants"],
+      "group": 6,
+      "period": 5
+    },
+    {
+      "atomicNumber": 43,
+      "symbol": "Tc",
+      "name": "Technetium",
+      "atomicWeight": 98,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d⁵5s²",
+      "electronegativity": 1.9,
+      "density": 11.5,
+      "meltingPoint": 2157,
+      "boilingPoint": 4265,
+      "discovery": {
+        "year": 1937,
+        "discoverer": "Carlo Perrier"
+      },
+      "commonUses": ["Nuclear medicine", "Medical imaging", "Research"],
+      "group": 7,
+      "period": 5
+    },
+    {
+      "atomicNumber": 44,
+      "symbol": "Ru",
+      "name": "Ruthenium",
+      "atomicWeight": 101.07,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d⁷5s¹",
+      "electronegativity": 2.2,
+      "density": 12.37,
+      "meltingPoint": 2334,
+      "boilingPoint": 4150,
+      "discovery": {
+        "year": 1844,
+        "discoverer": "Karl Ernst Claus"
+      },
+      "commonUses": ["Electronics", "Chemical catalysts", "Solar cells"],
+      "group": 8,
+      "period": 5
+    },
+    {
+      "atomicNumber": 45,
+      "symbol": "Rh",
+      "name": "Rhodium",
+      "atomicWeight": 102.9055,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d⁸5s¹",
+      "electronegativity": 2.28,
+      "density": 12.41,
+      "meltingPoint": 1964,
+      "boilingPoint": 3695,
+      "discovery": {
+        "year": 1803,
+        "discoverer": "William Hyde Wollaston"
+      },
+      "commonUses": ["Catalytic converters", "Laboratory equipment", "Jewelry"],
+      "group": 9,
+      "period": 5
+    },
+    {
+      "atomicNumber": 46,
+      "symbol": "Pd",
+      "name": "Palladium",
+      "atomicWeight": 106.42,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹⁰",
+      "electronegativity": 2.2,
+      "density": 12.02,
+      "meltingPoint": 1554.9,
+      "boilingPoint": 2963,
+      "discovery": {
+        "year": 1803,
+        "discoverer": "William Hyde Wollaston"
+      },
+      "commonUses": ["Catalytic converters", "Electronics", "Dental fillings"],
+      "group": 10,
+      "period": 5
+    },
+    {
+      "atomicNumber": 47,
+      "symbol": "Ag",
+      "name": "Silver",
+      "atomicWeight": 107.8682,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹⁰5s¹",
+      "electronegativity": 1.93,
+      "density": 10.49,
+      "meltingPoint": 961.78,
+      "boilingPoint": 2162,
+      "discovery": {
+        "year": -3000,
+        "discoverer": "Ancient civilizations"
+      },
+      "commonUses": ["Jewelry", "Photography", "Electronics"],
+      "group": 11,
+      "period": 5
+    },
+    {
+      "atomicNumber": 48,
+      "symbol": "Cd",
+      "name": "Cadmium",
+      "atomicWeight": 112.414,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹⁰5s²",
+      "electronegativity": 1.69,
+      "density": 8.65,
+      "meltingPoint": 321.07,
+      "boilingPoint": 767,
+      "discovery": {
+        "year": 1817,
+        "discoverer": "Friedrich Stromeyer"
+      },
+      "commonUses": ["Batteries", "Solar cells", "Nuclear control rods"],
+      "group": 12,
+      "period": 5
+    },
+    {
+      "atomicNumber": 49,
+      "symbol": "In",
+      "name": "Indium",
+      "atomicWeight": 114.818,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹⁰5s²5p¹",
+      "electronegativity": 1.78,
+      "density": 7.31,
+      "meltingPoint": 156.6,
+      "boilingPoint": 2072,
+      "discovery": {
+        "year": 1863,
+        "discoverer": "Ferdinand Reich"
+      },
+      "commonUses": ["LCD screens", "Solar panels", "Semiconductors"],
+      "group": 13,
+      "period": 5
+    },
+    {
+      "atomicNumber": 50,
+      "symbol": "Sn",
+      "name": "Tin",
+      "atomicWeight": 118.71,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹⁰5s²5p²",
+      "electronegativity": 1.96,
+      "density": 7.287,
+      "meltingPoint": 231.93,
+      "boilingPoint": 2602,
+      "discovery": {
+        "year": -3500,
+        "discoverer": "Ancient civilizations"
+      },
+      "commonUses": ["Soldering", "Food packaging", "Bronze production"],
+      "group": 14,
+      "period": 5
+    },
+    {
+      "atomicNumber": 51,
+      "symbol": "Sb",
+      "name": "Antimony",
+      "atomicWeight": 121.76,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹⁰5s²5p³",
+      "electronegativity": 2.05,
+      "density": 6.697,
+      "meltingPoint": 630.63,
+      "boilingPoint": 1587,
+      "discovery": {
+        "year": -3000,
+        "discoverer": "Ancient civilizations"
+      },
+      "commonUses": ["Alloys", "Flame retardants", "Semiconductors"],
+      "group": 15,
+      "period": 5
+    },
+    {
+      "atomicNumber": 52,
+      "symbol": "Te",
+      "name": "Tellurium",
+      "atomicWeight": 127.6,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹⁰5s²5p⁴",
+      "electronegativity": 2.1,
+      "density": 6.24,
+      "meltingPoint": 449.51,
+      "boilingPoint": 988,
+      "discovery": {
+        "year": 1782,
+        "discoverer": "Franz-Joseph Müller von Reichenstein"
+      },
+      "commonUses": ["Solar cells", "Alloys", "Optical disks"],
+      "group": 16,
+      "period": 5
+    },
+    {
+      "atomicNumber": 53,
+      "symbol": "I",
+      "name": "Iodine",
+      "atomicWeight": 126.90447,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Kr]4d¹⁰5s²5p⁵",
+      "electronegativity": 2.66,
+      "density": 4.933,
+      "meltingPoint": 113.7,
+      "boilingPoint": 184.3,
+      "discovery": {
+        "year": 1811,
+        "discoverer": "Bernard Courtois"
+      },
+      "commonUses": ["Disinfectants", "Medical imaging", "Photography"],
+      "group": 17,
+      "period": 5
+    },
+    {
+      "atomicNumber": 54,
+      "symbol": "Xe",
+      "name": "Xenon",
+      "atomicWeight": 131.293,
+      "category": "noble gas",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[Kr]4d¹⁰5s²5p⁶",
+      "electronegativity": null,
+      "density": 0.005887,
+      "meltingPoint": -111.8,
+      "boilingPoint": -108.1,
+      "discovery": {
+        "year": 1898,
+        "discoverer": "William Ramsay"
+      },
+      "commonUses": ["Lighting", "Medical imaging", "Spacecraft propulsion"],
+      "group": 18,
+      "period": 5
+    },
+    {
+      "atomicNumber": 55,
+      "symbol": "Cs",
+      "name": "Cesium",
+      "atomicWeight": 132.90545196,
+      "category": "alkali metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]6s¹",
+      "electronegativity": 0.79,
+      "density": 1.93,
+      "meltingPoint": 28.44,
+      "boilingPoint": 671,
+      "discovery": {
+        "year": 1860,
+        "discoverer": "Robert Bunsen"
+      },
+      "commonUses": ["Atomic clocks", "Photocells", "Vacuum tubes"],
+      "group": 1,
+      "period": 6
+    },
+    {
+      "atomicNumber": 56,
+      "symbol": "Ba",
+      "name": "Barium",
+      "atomicWeight": 137.327,
+      "category": "alkaline earth metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]6s²",
+      "electronegativity": 0.89,
+      "density": 3.51,
+      "meltingPoint": 727,
+      "boilingPoint": 1897,
+      "discovery": {
+        "year": 1808,
+        "discoverer": "Humphry Davy"
+      },
+      "commonUses": ["X-ray imaging", "Fireworks", "Glass production"],
+      "group": 2,
+      "period": 6
+    },
+    {
+      "atomicNumber": 57,
+      "symbol": "La",
+      "name": "Lanthanum",
+      "atomicWeight": 138.90547,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]5d¹6s²",
+      "electronegativity": 1.1,
+      "density": 6.162,
+      "meltingPoint": 920,
+      "boilingPoint": 3464,
+      "discovery": {
+        "year": 1839,
+        "discoverer": "Carl Gustaf Mosander"
+      },
+      "commonUses": ["Camera lenses", "Batteries", "Catalysts"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 58,
+      "symbol": "Ce",
+      "name": "Cerium",
+      "atomicWeight": 140.116,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹5d¹6s²",
+      "electronegativity": 1.12,
+      "density": 6.77,
+      "meltingPoint": 795,
+      "boilingPoint": 3443,
+      "discovery": {
+        "year": 1803,
+        "discoverer": "Jöns Jacob Berzelius"
+      },
+      "commonUses": ["Catalytic converters", "Flints", "Glass polishing"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 59,
+      "symbol": "Pr",
+      "name": "Praseodymium",
+      "atomicWeight": 140.90766,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f³6s²",
+      "electronegativity": 1.13,
+      "density": 6.773,
+      "meltingPoint": 931,
+      "boilingPoint": 3520,
+      "discovery": {
+        "year": 1885,
+        "discoverer": "Carl Auer von Welsbach"
+      },
+      "commonUses": ["Magnets", "Alloys", "Glass coloring"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 60,
+      "symbol": "Nd",
+      "name": "Neodymium",
+      "atomicWeight": 144.242,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f⁴6s²",
+      "electronegativity": 1.14,
+      "density": 7.007,
+      "meltingPoint": 1021,
+      "boilingPoint": 3074,
+      "discovery": {
+        "year": 1885,
+        "discoverer": "Carl Auer von Welsbach"
+      },
+      "commonUses": ["Strong magnets", "Lasers", "Glass coloring"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 61,
+      "symbol": "Pm",
+      "name": "Promethium",
+      "atomicWeight": 145,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f⁵6s²",
+      "electronegativity": 1.13,
+      "density": 7.26,
+      "meltingPoint": 1042,
+      "boilingPoint": 3000,
+      "discovery": {
+        "year": 1945,
+        "discoverer": "Jacob A. Marinsky"
+      },
+      "commonUses": ["Nuclear batteries", "Luminescent paint", "Research"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 62,
+      "symbol": "Sm",
+      "name": "Samarium",
+      "atomicWeight": 150.36,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f⁶6s²",
+      "electronegativity": 1.17,
+      "density": 7.52,
+      "meltingPoint": 1074,
+      "boilingPoint": 1794,
+      "discovery": {
+        "year": 1879,
+        "discoverer": "Paul-Émile Lecoq de Boisbaudran"
+      },
+      "commonUses": ["Magnets", "Nuclear reactors", "Cancer treatment"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 63,
+      "symbol": "Eu",
+      "name": "Europium",
+      "atomicWeight": 151.964,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f⁷6s²",
+      "electronegativity": 1.2,
+      "density": 5.244,
+      "meltingPoint": 822,
+      "boilingPoint": 1527,
+      "discovery": {
+        "year": 1901,
+        "discoverer": "Eugène-Anatole Demarçay"
+      },
+      "commonUses": ["Phosphors", "Euro banknotes", "Nuclear control rods"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 64,
+      "symbol": "Gd",
+      "name": "Gadolinium",
+      "atomicWeight": 157.25,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f⁷5d¹6s²",
+      "electronegativity": 1.2,
+      "density": 7.901,
+      "meltingPoint": 1313,
+      "boilingPoint": 3273,
+      "discovery": {
+        "year": 1880,
+        "discoverer": "Jean Charles Galissard de Marignac"
+      },
+      "commonUses": ["MRI contrast agents", "Nuclear reactors", "Alloys"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 65,
+      "symbol": "Tb",
+      "name": "Terbium",
+      "atomicWeight": 158.92535,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f⁹6s²",
+      "electronegativity": 1.2,
+      "density": 8.23,
+      "meltingPoint": 1356,
+      "boilingPoint": 3230,
+      "discovery": {
+        "year": 1843,
+        "discoverer": "Carl Gustaf Mosander"
+      },
+      "commonUses": ["Phosphors", "Magnets", "Solid-state devices"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 66,
+      "symbol": "Dy",
+      "name": "Dysprosium",
+      "atomicWeight": 162.5,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁰6s²",
+      "electronegativity": 1.22,
+      "density": 8.551,
+      "meltingPoint": 1412,
+      "boilingPoint": 2567,
+      "discovery": {
+        "year": 1886,
+        "discoverer": "Paul-Émile Lecoq de Boisbaudran"
+      },
+      "commonUses": ["Magnets", "Lasers", "Nuclear control rods"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 67,
+      "symbol": "Ho",
+      "name": "Holmium",
+      "atomicWeight": 164.93033,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹¹6s²",
+      "electronegativity": 1.23,
+      "density": 8.795,
+      "meltingPoint": 1474,
+      "boilingPoint": 2695,
+      "discovery": {
+        "year": 1878,
+        "discoverer": "Per Teodor Cleve"
+      },
+      "commonUses": ["Magnets", "Nuclear control rods", "Colorants"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 68,
+      "symbol": "Er",
+      "name": "Erbium",
+      "atomicWeight": 167.259,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹²6s²",
+      "electronegativity": 1.24,
+      "density": 9.066,
+      "meltingPoint": 1529,
+      "boilingPoint": 2868,
+      "discovery": {
+        "year": 1843,
+        "discoverer": "Carl Gustaf Mosander"
+      },
+      "commonUses": ["Fiber optics", "Lasers", "Nuclear technology"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 69,
+      "symbol": "Tm",
+      "name": "Thulium",
+      "atomicWeight": 168.93422,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹³6s²",
+      "electronegativity": 1.25,
+      "density": 9.321,
+      "meltingPoint": 1545,
+      "boilingPoint": 1950,
+      "discovery": {
+        "year": 1879,
+        "discoverer": "Per Teodor Cleve"
+      },
+      "commonUses": ["X-ray sources", "Lasers", "Portable X-ray devices"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 70,
+      "symbol": "Yb",
+      "name": "Ytterbium",
+      "atomicWeight": 173.045,
+      "category": "lanthanide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴6s²",
+      "electronegativity": 1.1,
+      "density": 6.57,
+      "meltingPoint": 824,
+      "boilingPoint": 1196,
+      "discovery": {
+        "year": 1878,
+        "discoverer": "Jean Charles Galissard de Marignac"
+      },
+      "commonUses": ["Atomic clocks", "Lasers", "Steel strengthening"],
+      "group": 3,
+      "period": 6
+    },
+    {
+      "atomicNumber": 76,
+      "symbol": "Os",
+      "name": "Osmium",
+      "atomicWeight": 190.23,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d⁶6s²",
+      "electronegativity": 2.2,
+      "density": 22.59,
+      "meltingPoint": 3033,
+      "boilingPoint": 5012,
+      "discovery": {
+        "year": 1803,
+        "discoverer": "Smithson Tennant"
+      },
+      "commonUses": ["Alloys", "Fountain pen tips", "Electrical contacts"],
+      "group": 8,
+      "period": 6
+    },
+    {
+      "atomicNumber": 77,
+      "symbol": "Ir",
+      "name": "Iridium",
+      "atomicWeight": 192.217,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d⁷6s²",
+      "electronegativity": 2.2,
+      "density": 22.56,
+      "meltingPoint": 2466,
+      "boilingPoint": 4428,
+      "discovery": {
+        "year": 1803,
+        "discoverer": "Smithson Tennant"
+      },
+      "commonUses": ["Spark plugs", "Crucibles", "Electronics"],
+      "group": 9,
+      "period": 6
+    },
+    {
+      "atomicNumber": 78,
+      "symbol": "Pt",
+      "name": "Platinum",
+      "atomicWeight": 195.084,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d⁹6s¹",
+      "electronegativity": 2.28,
+      "density": 21.45,
+      "meltingPoint": 1768.3,
+      "boilingPoint": 3825,
+      "discovery": {
+        "year": 1735,
+        "discoverer": "Antonio de Ulloa"
+      },
+      "commonUses": ["Catalytic converters", "Jewelry", "Electronics"],
+      "group": 10,
+      "period": 6
+    },
+    {
+      "atomicNumber": 79,
+      "symbol": "Au",
+      "name": "Gold",
+      "atomicWeight": 196.966569,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d¹⁰6s¹",
+      "electronegativity": 2.54,
+      "density": 19.3,
+      "meltingPoint": 1064.18,
+      "boilingPoint": 2856,
+      "discovery": {
+        "year": -3000,
+        "discoverer": "Ancient civilizations"
+      },
+      "commonUses": ["Jewelry", "Electronics", "Dental work"],
+      "group": 11,
+      "period": 6
+    },
+    {
+      "atomicNumber": 80,
+      "symbol": "Hg",
+      "name": "Mercury",
+      "atomicWeight": 200.592,
+      "category": "transition metal",
+      "stateAtRoomTemp": "liquid",
+      "electronConfiguration": "[Xe]4f¹⁴5d¹⁰6s²",
+      "electronegativity": 2.0,
+      "density": 13.534,
+      "meltingPoint": -38.83,
+      "boilingPoint": 356.73,
+      "discovery": {
+        "year": -1500,
+        "discoverer": "Ancient civilizations"
+      },
+      "commonUses": ["Thermometers", "Dental amalgams", "Fluorescent lights"],
+      "group": 12,
+      "period": 6
+    },
+    {
+      "atomicNumber": 81,
+      "symbol": "Tl",
+      "name": "Thallium",
+      "atomicWeight": 204.38,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d¹⁰6s²6p¹",
+      "electronegativity": 1.62,
+      "density": 11.85,
+      "meltingPoint": 304,
+      "boilingPoint": 1473,
+      "discovery": {
+        "year": 1861,
+        "discoverer": "William Crookes"
+      },
+      "commonUses": ["Electronics", "Optical lenses", "Nuclear medicine"],
+      "group": 13,
+      "period": 6
+    },
+    {
+      "atomicNumber": 82,
+      "symbol": "Pb",
+      "name": "Lead",
+      "atomicWeight": 207.2,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d¹⁰6s²6p²",
+      "electronegativity": 1.87,
+      "density": 11.34,
+      "meltingPoint": 327.46,
+      "boilingPoint": 1749,
+      "discovery": {
+        "year": -7000,
+        "discoverer": "Ancient civilizations"
+      },
+      "commonUses": ["Batteries", "Radiation shielding", "Construction"],
+      "group": 14,
+      "period": 6
+    },
+    {
+      "atomicNumber": 83,
+      "symbol": "Bi",
+      "name": "Bismuth",
+      "atomicWeight": 208.9804,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d¹⁰6s²6p³",
+      "electronegativity": 2.02,
+      "density": 9.78,
+      "meltingPoint": 271.406,
+      "boilingPoint": 1564,
+      "discovery": {
+        "year": 1753,
+        "discoverer": "Claude François Geoffroy"
+      },
+      "commonUses": ["Cosmetics", "Alloys", "Pharmaceuticals"],
+      "group": 15,
+      "period": 6
+    },
+    {
+      "atomicNumber": 84,
+      "symbol": "Po",
+      "name": "Polonium",
+      "atomicWeight": 209,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d¹⁰6s²6p⁴",
+      "electronegativity": 2.0,
+      "density": 9.32,
+      "meltingPoint": 254,
+      "boilingPoint": 962,
+      "discovery": {
+        "year": 1898,
+        "discoverer": "Marie Curie"
+      },
+      "commonUses": ["Nuclear batteries", "Static eliminators", "Research"],
+      "group": 16,
+      "period": 6
+    },
+    {
+      "atomicNumber": 85,
+      "symbol": "At",
+      "name": "Astatine",
+      "atomicWeight": 210,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Xe]4f¹⁴5d¹⁰6s²6p⁵",
+      "electronegativity": 2.2,
+      "density": 7,
+      "meltingPoint": 302,
+      "boilingPoint": 337,
+      "discovery": {
+        "year": 1940,
+        "discoverer": "Dale R. Corson"
+      },
+      "commonUses": ["Nuclear medicine", "Research", "Rare applications"],
+      "group": 17,
+      "period": 6
+    },
+    {
+      "atomicNumber": 86,
+      "symbol": "Rn",
+      "name": "Radon",
+      "atomicWeight": 222,
+      "category": "noble gas",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[Xe]4f¹⁴5d¹⁰6s²6p⁶",
+      "electronegativity": null,
+      "density": 0.00973,
+      "meltingPoint": -71,
+      "boilingPoint": -61.7,
+      "discovery": {
+        "year": 1900,
+        "discoverer": "Friedrich Ernst Dorn"
+      },
+      "commonUses": ["Cancer treatment", "Earthquake prediction", "Research"],
+      "group": 18,
+      "period": 6
+    },
+    {
+      "atomicNumber": 87,
+      "symbol": "Fr",
+      "name": "Francium",
+      "atomicWeight": 223,
+      "category": "alkali metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]7s¹",
+      "electronegativity": 0.7,
+      "density": 1.87,
+      "meltingPoint": 27,
+      "boilingPoint": 677,
+      "discovery": {
+        "year": 1939,
+        "discoverer": "Marguerite Perey"
+      },
+      "commonUses": ["Research", "No commercial applications"],
+      "group": 1,
+      "period": 7
+    },
+    {
+      "atomicNumber": 88,
+      "symbol": "Ra",
+      "name": "Radium",
+      "atomicWeight": 226,
+      "category": "alkaline earth metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]7s²",
+      "electronegativity": 0.9,
+      "density": 5.5,
+      "meltingPoint": 700,
+      "boilingPoint": 1737,
+      "discovery": {
+        "year": 1898,
+        "discoverer": "Marie Curie"
+      },
+      "commonUses": ["Cancer treatment", "Luminous paint", "Research"],
+      "group": 2,
+      "period": 7
+    },
+    {
+      "atomicNumber": 89,
+      "symbol": "Ac",
+      "name": "Actinium",
+      "atomicWeight": 227,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]6d¹7s²",
+      "electronegativity": 1.1,
+      "density": 10.07,
+      "meltingPoint": 1050,
+      "boilingPoint": 3200,
+      "discovery": {
+        "year": 1899,
+        "discoverer": "André-Louis Debierne"
+      },
+      "commonUses": ["Neutron sources", "Cancer treatment", "Research"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 90,
+      "symbol": "Th",
+      "name": "Thorium",
+      "atomicWeight": 232.0377,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]6d²7s²",
+      "electronegativity": 1.3,
+      "density": 11.72,
+      "meltingPoint": 1842,
+      "boilingPoint": 4788,
+      "discovery": {
+        "year": 1829,
+        "discoverer": "Jöns Jacob Berzelius"
+      },
+      "commonUses": ["Nuclear fuel", "Alloys", "Gas mantles"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 91,
+      "symbol": "Pa",
+      "name": "Protactinium",
+      "atomicWeight": 231.03588,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f²6d¹7s²",
+      "electronegativity": 1.5,
+      "density": 15.37,
+      "meltingPoint": 1841,
+      "boilingPoint": 4300,
+      "discovery": {
+        "year": 1913,
+        "discoverer": "Kasimir Fajans"
+      },
+      "commonUses": ["Research", "Nuclear physics", "No commercial uses"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 92,
+      "symbol": "U",
+      "name": "Uranium",
+      "atomicWeight": 238.02891,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f³6d¹7s²",
+      "electronegativity": 1.38,
+      "density": 19.1,
+      "meltingPoint": 1132.2,
+      "boilingPoint": 4131,
+      "discovery": {
+        "year": 1789,
+        "discoverer": "Martin Heinrich Klaproth"
+      },
+      "commonUses": [
+        "Nuclear fuel",
+        "Military applications",
+        "Radiation shielding"
+      ],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 93,
+      "symbol": "Np",
+      "name": "Neptunium",
+      "atomicWeight": 237,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f⁴6d¹7s²",
+      "electronegativity": 1.36,
+      "density": 20.45,
+      "meltingPoint": 644,
+      "boilingPoint": 4000,
+      "discovery": {
+        "year": 1940,
+        "discoverer": "Edwin McMillan"
+      },
+      "commonUses": [
+        "Nuclear detection devices",
+        "Research",
+        "Nuclear batteries"
+      ],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 94,
+      "symbol": "Pu",
+      "name": "Plutonium",
+      "atomicWeight": 244,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f⁶7s²",
+      "electronegativity": 1.28,
+      "density": 19.84,
+      "meltingPoint": 639.4,
+      "boilingPoint": 3228,
+      "discovery": {
+        "year": 1940,
+        "discoverer": "Glenn T. Seaborg"
+      },
+      "commonUses": ["Nuclear weapons", "Nuclear power", "Space missions"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 95,
+      "symbol": "Am",
+      "name": "Americium",
+      "atomicWeight": 243,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f⁷7s²",
+      "electronegativity": 1.3,
+      "density": 13.69,
+      "meltingPoint": 1176,
+      "boilingPoint": 2011,
+      "discovery": {
+        "year": 1944,
+        "discoverer": "Glenn T. Seaborg"
+      },
+      "commonUses": ["Smoke detectors", "Nuclear medicine", "Research"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 96,
+      "symbol": "Cm",
+      "name": "Curium",
+      "atomicWeight": 247,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f⁷6d¹7s²",
+      "electronegativity": 1.3,
+      "density": 13.51,
+      "meltingPoint": 1345,
+      "boilingPoint": 3110,
+      "discovery": {
+        "year": 1944,
+        "discoverer": "Glenn T. Seaborg"
+      },
+      "commonUses": [
+        "Scientific research",
+        "Radioisotope power",
+        "Alpha particles"
+      ],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 97,
+      "symbol": "Bk",
+      "name": "Berkelium",
+      "atomicWeight": 247,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f⁹7s²",
+      "electronegativity": 1.3,
+      "density": 14.78,
+      "meltingPoint": 1050,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1949,
+        "discoverer": "Stanley G. Thompson"
+      },
+      "commonUses": ["Scientific research", "Nuclear synthesis"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 98,
+      "symbol": "Cf",
+      "name": "Californium",
+      "atomicWeight": 251,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁰7s²",
+      "electronegativity": 1.3,
+      "density": 15.1,
+      "meltingPoint": 900,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1950,
+        "discoverer": "Stanley G. Thompson"
+      },
+      "commonUses": ["Neutron source", "Metal detection", "Cancer treatment"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 99,
+      "symbol": "Es",
+      "name": "Einsteinium",
+      "atomicWeight": 252,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹¹7s²",
+      "electronegativity": 1.3,
+      "density": 8.84,
+      "meltingPoint": 860,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1952,
+        "discoverer": "Albert Ghiorso"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 100,
+      "symbol": "Fm",
+      "name": "Fermium",
+      "atomicWeight": 257,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹²7s²",
+      "electronegativity": 1.3,
+      "density": null,
+      "meltingPoint": 1527,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1952,
+        "discoverer": "Albert Ghiorso"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 101,
+      "symbol": "Md",
+      "name": "Mendelevium",
+      "atomicWeight": 258,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹³7s²",
+      "electronegativity": 1.3,
+      "density": null,
+      "meltingPoint": 827,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1955,
+        "discoverer": "Albert Ghiorso"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 102,
+      "symbol": "No",
+      "name": "Nobelium",
+      "atomicWeight": 259,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴7s²",
+      "electronegativity": 1.3,
+      "density": null,
+      "meltingPoint": 827,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1958,
+        "discoverer": "Albert Ghiorso"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 103,
+      "symbol": "Lr",
+      "name": "Lawrencium",
+      "atomicWeight": 266,
+      "category": "actinide",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴7s²7p¹",
+      "electronegativity": 1.3,
+      "density": null,
+      "meltingPoint": 1627,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1961,
+        "discoverer": "Albert Ghiorso"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 3,
+      "period": 7
+    },
+    {
+      "atomicNumber": 104,
+      "symbol": "Rf",
+      "name": "Rutherfordium",
+      "atomicWeight": 267,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d²7s²",
+      "electronegativity": null,
+      "density": 23.2,
+      "meltingPoint": 2100,
+      "boilingPoint": 5500,
+      "discovery": {
+        "year": 1964,
+        "discoverer": "Joint Institute for Nuclear Research"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 4,
+      "period": 7
+    },
+    {
+      "atomicNumber": 105,
+      "symbol": "Db",
+      "name": "Dubnium",
+      "atomicWeight": 268,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d³7s²",
+      "electronegativity": null,
+      "density": 29.3,
+      "meltingPoint": null,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1967,
+        "discoverer": "Joint Institute for Nuclear Research"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 5,
+      "period": 7
+    },
+    {
+      "atomicNumber": 106,
+      "symbol": "Sg",
+      "name": "Seaborgium",
+      "atomicWeight": 269,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d⁴7s²",
+      "electronegativity": null,
+      "density": 35.0,
+      "meltingPoint": null,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1974,
+        "discoverer": "Lawrence Berkeley Laboratory"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 6,
+      "period": 7
+    },
+    {
+      "atomicNumber": 107,
+      "symbol": "Bh",
+      "name": "Bohrium",
+      "atomicWeight": 270,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d⁵7s²",
+      "electronegativity": null,
+      "density": 37.1,
+      "meltingPoint": null,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1981,
+        "discoverer": "GSI Helmholtz Centre"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 7,
+      "period": 7
+    },
+    {
+      "atomicNumber": 108,
+      "symbol": "Hs",
+      "name": "Hassium",
+      "atomicWeight": 269,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d⁶7s²",
+      "electronegativity": null,
+      "density": 41.0,
+      "meltingPoint": null,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1984,
+        "discoverer": "GSI Helmholtz Centre"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 8,
+      "period": 7
+    },
+    {
+      "atomicNumber": 109,
+      "symbol": "Mt",
+      "name": "Meitnerium",
+      "atomicWeight": 278,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d⁷7s²",
+      "electronegativity": null,
+      "density": 37.4,
+      "meltingPoint": null,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1982,
+        "discoverer": "GSI Helmholtz Centre"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 9,
+      "period": 7
+    },
+    {
+      "atomicNumber": 110,
+      "symbol": "Ds",
+      "name": "Darmstadtium",
+      "atomicWeight": 281,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d⁸7s²",
+      "electronegativity": null,
+      "density": 34.8,
+      "meltingPoint": null,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1994,
+        "discoverer": "GSI Helmholtz Centre"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 10,
+      "period": 7
+    },
+    {
+      "atomicNumber": 111,
+      "symbol": "Rg",
+      "name": "Roentgenium",
+      "atomicWeight": 282,
+      "category": "transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d⁹7s²",
+      "electronegativity": null,
+      "density": 28.7,
+      "meltingPoint": null,
+      "boilingPoint": null,
+      "discovery": {
+        "year": 1994,
+        "discoverer": "GSI Helmholtz Centre"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 11,
+      "period": 7
+    },
+    {
+      "atomicNumber": 112,
+      "symbol": "Cn",
+      "name": "Copernicium",
+      "atomicWeight": 285,
+      "category": "transition metal",
+      "stateAtRoomTemp": "liquid",
+      "electronConfiguration": "[Rn]5f¹⁴6d¹⁰7s²",
+      "electronegativity": null,
+      "density": 14.0,
+      "meltingPoint": null,
+      "boilingPoint": 357,
+      "discovery": {
+        "year": 1996,
+        "discoverer": "GSI Helmholtz Centre"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 12,
+      "period": 7
+    },
+    {
+      "atomicNumber": 113,
+      "symbol": "Nh",
+      "name": "Nihonium",
+      "atomicWeight": 286,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d¹⁰7s²7p¹",
+      "electronegativity": null,
+      "density": 16,
+      "meltingPoint": 430,
+      "boilingPoint": 1100,
+      "discovery": {
+        "year": 2004,
+        "discoverer": "RIKEN"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 13,
+      "period": 7
+    },
+    {
+      "atomicNumber": 114,
+      "symbol": "Fl",
+      "name": "Flerovium",
+      "atomicWeight": 289,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d¹⁰7s²7p²",
+      "electronegativity": null,
+      "density": 14,
+      "meltingPoint": 340,
+      "boilingPoint": 420,
+      "discovery": {
+        "year": 1998,
+        "discoverer": "Joint Institute for Nuclear Research"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 14,
+      "period": 7
+    },
+    {
+      "atomicNumber": 115,
+      "symbol": "Mc",
+      "name": "Moscovium",
+      "atomicWeight": 290,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d¹⁰7s²7p³",
+      "electronegativity": null,
+      "density": 13.5,
+      "meltingPoint": 670,
+      "boilingPoint": 1400,
+      "discovery": {
+        "year": 2003,
+        "discoverer": "Joint Institute for Nuclear Research"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 15,
+      "period": 7
+    },
+    {
+      "atomicNumber": 116,
+      "symbol": "Lv",
+      "name": "Livermorium",
+      "atomicWeight": 293,
+      "category": "post-transition metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d¹⁰7s²7p⁴",
+      "electronegativity": null,
+      "density": 12.9,
+      "meltingPoint": 709,
+      "boilingPoint": 1085,
+      "discovery": {
+        "year": 2000,
+        "discoverer": "Joint Institute for Nuclear Research"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 16,
+      "period": 7
+    },
+    {
+      "atomicNumber": 117,
+      "symbol": "Ts",
+      "name": "Tennessine",
+      "atomicWeight": 294,
+      "category": "metalloid",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[Rn]5f¹⁴6d¹⁰7s²7p⁵",
+      "electronegativity": null,
+      "density": 7.2,
+      "meltingPoint": 723,
+      "boilingPoint": 883,
+      "discovery": {
+        "year": 2010,
+        "discoverer": "Joint Institute for Nuclear Research"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 17,
+      "period": 7
+    },
+    {
+      "atomicNumber": 118,
+      "symbol": "Og",
+      "name": "Oganesson",
+      "atomicWeight": 294,
+      "category": "noble gas",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "[Rn]5f¹⁴6d¹⁰7s²7p⁶",
+      "electronegativity": null,
+      "density": 13.6,
+      "meltingPoint": 325,
+      "boilingPoint": 350,
+      "discovery": {
+        "year": 2006,
+        "discoverer": "Joint Institute for Nuclear Research"
+      },
+      "commonUses": ["Scientific research"],
+      "group": 18,
+      "period": 7
     }
   ],
   "categories": [
