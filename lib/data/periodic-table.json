@@ -1,0 +1,80 @@
+{
+  "elements": [
+    {
+      "atomicNumber": 1,
+      "symbol": "H",
+      "name": "Hydrogen",
+      "atomicWeight": 1.008,
+      "category": "nonmetal",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "1s¹",
+      "electronegativity": 2.2,
+      "density": 0.00008988,
+      "meltingPoint": -259.16,
+      "boilingPoint": -252.87,
+      "discovery": {
+        "year": 1766,
+        "discoverer": "Henry Cavendish"
+      },
+      "commonUses": ["Fuel", "Rocket propellant", "Industrial processes"],
+      "group": 1,
+      "period": 1
+    },
+    {
+      "atomicNumber": 2,
+      "symbol": "He",
+      "name": "Helium",
+      "atomicWeight": 4.002602,
+      "category": "noble gas",
+      "stateAtRoomTemp": "gas",
+      "electronConfiguration": "1s²",
+      "electronegativity": null,
+      "density": 0.0001785,
+      "meltingPoint": -272.2,
+      "boilingPoint": -268.93,
+      "discovery": {
+        "year": 1895,
+        "discoverer": "Pierre Janssen"
+      },
+      "commonUses": [
+        "Cooling superconducting magnets",
+        "Pressurizing rocket fuel tanks",
+        "Diving gas mixtures"
+      ],
+      "group": 18,
+      "period": 1
+    },
+    {
+      "atomicNumber": 3,
+      "symbol": "Li",
+      "name": "Lithium",
+      "atomicWeight": 6.94,
+      "category": "alkali metal",
+      "stateAtRoomTemp": "solid",
+      "electronConfiguration": "[He]2s¹",
+      "electronegativity": 0.98,
+      "density": 0.534,
+      "meltingPoint": 180.54,
+      "boilingPoint": 1342,
+      "discovery": {
+        "year": 1817,
+        "discoverer": "Johan August Arfwedson"
+      },
+      "commonUses": ["Batteries", "Psychiatric medications", "Nuclear fusion"],
+      "group": 1,
+      "period": 2
+    }
+  ],
+  "categories": [
+    "alkali metal",
+    "alkaline earth metal",
+    "lanthanide",
+    "actinide",
+    "transition metal",
+    "post-transition metal",
+    "metalloid",
+    "nonmetal",
+    "noble gas",
+    "unknown"
+  ]
+}
