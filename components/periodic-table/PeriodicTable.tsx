@@ -33,23 +33,34 @@ function ElementTile({ element, onClick }: ElementTileProps) {
       <TooltipTrigger asChild>
         <Card
           className={`
-            w-[70px] h-[70px] p-2 cursor-pointer transition-all
+            w-[80px] h-[80px] p-1.5 cursor-pointer transition-all
             hover:scale-105 hover:shadow-lg
-            flex flex-col items-center justify-center
+            flex flex-col items-center justify-between
             ${getCategoryColor(element.category)}
           `}
           onClick={onClick}
         >
-          <div className="text-xs opacity-50">{element.atomicNumber}</div>
+          <div className="text-xs opacity-70 self-start">
+            {element.atomicNumber}
+          </div>
           <div className="text-xl font-bold">{element.symbol}</div>
           <div className="text-[10px] truncate w-full text-center">
             {element.name}
           </div>
+          <div className="text-[9px] opacity-70">
+            {element.atomicWeight.toFixed(2)}
+          </div>
         </Card>
       </TooltipTrigger>
       <TooltipContent>
-        <p>{element.name}</p>
-        <p className="text-xs opacity-75">{element.category}</p>
+        <p className="font-medium">{element.name}</p>
+        <p className="text-xs opacity-75">
+          Atomic Number: {element.atomicNumber}
+        </p>
+        <p className="text-xs opacity-75">
+          Atomic Weight: {element.atomicWeight}
+        </p>
+        <p className="text-xs opacity-75">Category: {element.category}</p>
       </TooltipContent>
     </Tooltip>
   );
@@ -120,11 +131,11 @@ export function PeriodicTable({
       <div
         className="grid gap-1"
         style={{
-          gridTemplateColumns: `repeat(${maxGroup}, minmax(70px, 1fr))`,
+          gridTemplateColumns: `repeat(${maxGroup}, minmax(80px, 1fr))`,
         }}
       >
         {grid.flat().map((element, index) => (
-          <div key={index} className="min-w-[70px] min-h-[70px]">
+          <div key={index} className="min-w-[80px] min-h-[80px]">
             {element && (
               <ElementTile
                 element={element}
@@ -139,7 +150,7 @@ export function PeriodicTable({
       {lanthanides.length > 0 && (
         <div className="mt-4">
           <div className="text-sm font-medium mb-2">Lanthanides (57-71)</div>
-          <div className="grid grid-flow-col gap-1 auto-cols-[70px]">
+          <div className="grid grid-flow-col gap-1 auto-cols-[80px]">
             {lanthanides.map((element) => (
               <ElementTile
                 key={element.atomicNumber}
@@ -155,7 +166,7 @@ export function PeriodicTable({
       {actinides.length > 0 && (
         <div className="mt-4">
           <div className="text-sm font-medium mb-2">Actinides (89-103)</div>
-          <div className="grid grid-flow-col gap-1 auto-cols-[70px]">
+          <div className="grid grid-flow-col gap-1 auto-cols-[80px]">
             {actinides.map((element) => (
               <ElementTile
                 key={element.atomicNumber}
