@@ -87,19 +87,36 @@ export function PeriodicTable({
     }
   );
 
-  const maxPeriod = Math.max(...filteredElements.map((e) => e.period));
-  const maxGroup = Math.max(...filteredElements.map((e) => e.group));
+  // Separate main table elements from lanthanides and actinides
+  const mainElements = filteredElements.filter(
+    (element) =>
+      element.category !== "lanthanide" && element.category !== "actinide"
+  );
+  const lanthanides = filteredElements.filter(
+    (element) => element.category === "lanthanide"
+  );
+  const actinides = filteredElements.filter(
+    (element) => element.category === "actinide"
+  );
+
+  // Create main grid
+  const maxPeriod = 7; // Standard periodic table has 7 main periods
+  const maxGroup = 18; // Standard periodic table has 18 groups
 
   const grid: (Element | null)[][] = Array.from({ length: maxPeriod }, () =>
     Array.from({ length: maxGroup }, () => null)
   );
 
-  filteredElements.forEach((element) => {
-    grid[element.period - 1][element.group - 1] = element;
+  mainElements.forEach((element) => {
+    if (element.period <= 7) {
+      // Only place elements that belong in main grid
+      grid[element.period - 1][element.group - 1] = element;
+    }
   });
 
   return (
-    <>
+    <div className="space-y-4">
+      {/* Main periodic table grid */}
       <div
         className="grid gap-1"
         style={{
@@ -117,6 +134,38 @@ export function PeriodicTable({
           </div>
         ))}
       </div>
+
+      {/* Lanthanide series */}
+      {lanthanides.length > 0 && (
+        <div className="mt-4">
+          <div className="text-sm font-medium mb-2">Lanthanides (57-71)</div>
+          <div className="grid grid-flow-col gap-1 auto-cols-[70px]">
+            {lanthanides.map((element) => (
+              <ElementTile
+                key={element.atomicNumber}
+                element={element}
+                onClick={() => setSelectedElement(element)}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Actinide series */}
+      {actinides.length > 0 && (
+        <div className="mt-4">
+          <div className="text-sm font-medium mb-2">Actinides (89-103)</div>
+          <div className="grid grid-flow-col gap-1 auto-cols-[70px]">
+            {actinides.map((element) => (
+              <ElementTile
+                key={element.atomicNumber}
+                element={element}
+                onClick={() => setSelectedElement(element)}
+              />
+            ))}
+          </div>
+        </div>
+      )}
 
       <Dialog
         open={!!selectedElement}
@@ -180,6 +229,6 @@ export function PeriodicTable({
           </DialogContent>
         )}
       </Dialog>
-    </>
+    </div>
   );
 }
