@@ -41,14 +41,16 @@ export function ElementFilters({
       <div className="space-y-2 flex-1">
         <Label htmlFor="category">Category</Label>
         <Select
-          value={selectedCategory || ""}
-          onValueChange={(value: string) => setSelectedCategory(value || null)}
+          value={selectedCategory || "all"}
+          onValueChange={(value: string) =>
+            setSelectedCategory(value === "all" ? null : value)
+          }
         >
           <SelectTrigger id="category">
             <SelectValue placeholder="All categories" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">All categories</SelectItem>
+            <SelectItem value="all">All categories</SelectItem>
             {categories.map((category) => (
               <SelectItem key={category} value={category}>
                 {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -61,14 +63,16 @@ export function ElementFilters({
       <div className="space-y-2 flex-1">
         <Label htmlFor="state">State at Room Temperature</Label>
         <Select
-          value={selectedState || ""}
-          onValueChange={(value: string) => setSelectedState(value || null)}
+          value={selectedState || "all"}
+          onValueChange={(value: string) =>
+            setSelectedState(value === "all" ? null : value)
+          }
         >
           <SelectTrigger id="state">
             <SelectValue placeholder="All states" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">All states</SelectItem>
+            <SelectItem value="all">All states</SelectItem>
             {states.map((state) => (
               <SelectItem key={state} value={state}>
                 {state.charAt(0).toUpperCase() + state.slice(1)}
