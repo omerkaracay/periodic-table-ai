@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Element } from "@/lib/types/periodic-table";
-import periodicTableData from "@/lib/data/periodic-table.json";
+import periodicTableData from "@/lib/data/periodic-table-list.json";
 import {
   Dialog,
   DialogContent,
@@ -11,75 +11,31 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Card } from "@/components/ui/card";
+import { Dashboard } from "./Dashboard";
+import { Separator } from "@/components/ui/separator";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+  Atom,
+  Beaker,
+  Calendar,
+  CircuitBoard,
+  TestTube,
+  Gauge,
+  History,
+  Info,
+  Microscope,
+  Thermometer,
+  Sun,
+  User,
+  Scale,
+  Link as LinkIcon,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { ElementTile } from "./ElementTile";
 
 interface PeriodicTableProps {
   selectedCategory: string | null;
   selectedState: string | null;
-}
-
-interface ElementTileProps {
-  element: Element;
-  onClick: () => void;
-}
-
-function ElementTile({ element, onClick }: ElementTileProps) {
-  return (
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <Card
-          className={`
-            w-[80px] h-[80px] p-1.5 cursor-pointer transition-all
-            hover:scale-105 hover:shadow-lg
-            flex flex-col items-center justify-between
-            ${getCategoryColor(element.category)}
-          `}
-          onClick={onClick}
-        >
-          <div className="text-xs opacity-70 self-start">
-            {element.atomicNumber}
-          </div>
-          <div className="text-xl font-bold">{element.symbol}</div>
-          <div className="text-[10px] truncate w-full text-center">
-            {element.name}
-          </div>
-          <div className="text-[9px] opacity-70">
-            {element.atomicWeight.toFixed(2)}
-          </div>
-        </Card>
-      </TooltipTrigger>
-      <TooltipContent>
-        <p className="font-medium">{element.name}</p>
-        <p className="text-xs opacity-75">
-          Atomic Number: {element.atomicNumber}
-        </p>
-        <p className="text-xs opacity-75">
-          Atomic Weight: {element.atomicWeight}
-        </p>
-        <p className="text-xs opacity-75">Category: {element.category}</p>
-      </TooltipContent>
-    </Tooltip>
-  );
-}
-
-function getCategoryColor(category: string): string {
-  const colors: Record<string, string> = {
-    "alkali metal": "bg-red-100 dark:bg-red-950",
-    "alkaline earth metal": "bg-orange-100 dark:bg-orange-950",
-    lanthanide: "bg-yellow-100 dark:bg-yellow-950",
-    actinide: "bg-green-100 dark:bg-green-950",
-    "transition metal": "bg-teal-100 dark:bg-teal-950",
-    "post-transition metal": "bg-blue-100 dark:bg-blue-950",
-    metalloid: "bg-indigo-100 dark:bg-indigo-950",
-    nonmetal: "bg-purple-100 dark:bg-purple-950",
-    "noble gas": "bg-pink-100 dark:bg-pink-950",
-    unknown: "bg-gray-100 dark:bg-gray-950",
-  };
-  return colors[category] || "bg-gray-100 dark:bg-gray-950";
 }
 
 export function PeriodicTable({
@@ -88,26 +44,26 @@ export function PeriodicTable({
 }: PeriodicTableProps) {
   const [selectedElement, setSelectedElement] = useState<Element | null>(null);
 
-  const filteredElements = (periodicTableData.elements as Element[]).filter(
-    (element) => {
-      if (selectedCategory && element.category !== selectedCategory)
-        return false;
-      if (selectedState && element.stateAtRoomTemp !== selectedState)
-        return false;
-      return true;
-    }
-  );
+  // Cast the data to unknown first, then to Element[] to avoid type mismatch
+  const elements = periodicTableData.elements as unknown as Element[];
+
+  const filteredElements = elements.filter((element) => {
+    if (selectedCategory && element.category !== selectedCategory) return false;
+    if (selectedState && element.phase !== selectedState) return false;
+    return true;
+  });
 
   // Separate main table elements from lanthanides and actinides
   const mainElements = filteredElements.filter(
     (element) =>
-      element.category !== "lanthanide" && element.category !== "actinide"
+      !element.category?.toLowerCase().includes("lanthanide") &&
+      !element.category?.toLowerCase().includes("actinide")
   );
-  const lanthanides = filteredElements.filter(
-    (element) => element.category === "lanthanide"
+  const lanthanides = filteredElements.filter((element) =>
+    element.category?.toLowerCase().includes("lanthanide")
   );
-  const actinides = filteredElements.filter(
-    (element) => element.category === "actinide"
+  const actinides = filteredElements.filter((element) =>
+    element.category?.toLowerCase().includes("actinide")
   );
 
   // Create main grid
@@ -126,120 +82,284 @@ export function PeriodicTable({
   });
 
   return (
-    <div className="space-y-4">
-      {/* Main periodic table grid */}
-      <div
-        className="grid gap-1"
-        style={{
-          gridTemplateColumns: `repeat(${maxGroup}, minmax(80px, 1fr))`,
-        }}
-      >
-        {grid.flat().map((element, index) => (
-          <div key={index} className="min-w-[80px] min-h-[80px]">
-            {element && (
-              <ElementTile
-                element={element}
-                onClick={() => setSelectedElement(element)}
-              />
-            )}
-          </div>
-        ))}
-      </div>
+    <div className="w-full overflow-auto bg-background">
+      <div className="min-w-[1020px] max-w-[1530px] mx-auto p-4">
+        {/* Dashboard */}
+        <Dashboard />
 
-      {/* Lanthanide series */}
-      {lanthanides.length > 0 && (
-        <div className="mt-4">
-          <div className="text-sm font-medium mb-2">Lanthanides (57-71)</div>
-          <div className="grid grid-flow-col gap-1 auto-cols-[80px]">
-            {lanthanides.map((element) => (
-              <ElementTile
-                key={element.atomicNumber}
-                element={element}
-                onClick={() => setSelectedElement(element)}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Actinide series */}
-      {actinides.length > 0 && (
-        <div className="mt-4">
-          <div className="text-sm font-medium mb-2">Actinides (89-103)</div>
-          <div className="grid grid-flow-col gap-1 auto-cols-[80px]">
-            {actinides.map((element) => (
-              <ElementTile
-                key={element.atomicNumber}
-                element={element}
-                onClick={() => setSelectedElement(element)}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-
-      <Dialog
-        open={!!selectedElement}
-        onOpenChange={() => setSelectedElement(null)}
-      >
-        {selectedElement && (
-          <DialogContent className="max-w-2xl">
-            <DialogHeader>
-              <DialogTitle className="text-2xl">
-                {selectedElement.name} ({selectedElement.symbol})
-              </DialogTitle>
-              <DialogDescription>
-                Atomic Number: {selectedElement.atomicNumber}
-              </DialogDescription>
-            </DialogHeader>
-            <div className="grid grid-cols-2 gap-4 py-4">
-              <div>
-                <h3 className="font-semibold mb-2">Physical Properties</h3>
-                <dl className="space-y-1">
-                  <dt className="text-sm opacity-70">Atomic Weight</dt>
-                  <dd>{selectedElement.atomicWeight} u</dd>
-                  <dt className="text-sm opacity-70">
-                    State at Room Temperature
-                  </dt>
-                  <dd>{selectedElement.stateAtRoomTemp}</dd>
-                  <dt className="text-sm opacity-70">Density</dt>
-                  <dd>{selectedElement.density} g/cm³</dd>
-                  <dt className="text-sm opacity-70">Melting Point</dt>
-                  <dd>{selectedElement.meltingPoint}°C</dd>
-                  <dt className="text-sm opacity-70">Boiling Point</dt>
-                  <dd>{selectedElement.boilingPoint}°C</dd>
-                </dl>
+        {/* Main periodic table grid */}
+        <div
+          className="grid gap-1.5"
+          style={{
+            gridTemplateColumns: `repeat(${maxGroup}, minmax(85px, 1fr))`,
+          }}
+        >
+          {grid.flat().map((element, index) => {
+            const period = Math.floor(index / maxGroup) + 1;
+            const group = (index % maxGroup) + 1;
+            return (
+              <div
+                key={`grid-${period}-${group}`}
+                className="min-w-[85px] min-h-[85px]"
+              >
+                {element && (
+                  <ElementTile
+                    element={element}
+                    onClick={() => setSelectedElement(element)}
+                  />
+                )}
               </div>
-              <div>
-                <h3 className="font-semibold mb-2">Electronic Properties</h3>
-                <dl className="space-y-1">
-                  <dt className="text-sm opacity-70">Electron Configuration</dt>
-                  <dd>{selectedElement.electronConfiguration}</dd>
-                  <dt className="text-sm opacity-70">Electronegativity</dt>
-                  <dd>
-                    {selectedElement.electronegativity !== null
-                      ? selectedElement.electronegativity
-                      : "N/A"}
-                  </dd>
-                </dl>
-                <h3 className="font-semibold mt-4 mb-2">Discovery</h3>
-                <p className="text-sm">
-                  Discovered in {selectedElement.discovery.year} by{" "}
-                  {selectedElement.discovery.discoverer}
-                </p>
-              </div>
+            );
+          })}
+        </div>
+
+        {/* Lanthanide series */}
+        {lanthanides.length > 0 && (
+          <div className="mt-6">
+            <div className="text-sm font-medium mb-2 pl-1">
+              Lanthanides (57-71)
             </div>
-            <div>
-              <h3 className="font-semibold mb-2">Common Uses</h3>
-              <ul className="list-disc list-inside text-sm space-y-1">
-                {selectedElement.commonUses.map((use, index) => (
-                  <li key={index}>{use}</li>
-                ))}
-              </ul>
+            <div className="grid grid-flow-col gap-1.5 auto-cols-[85px]">
+              {lanthanides.map((element, index) => (
+                <div key={`lanthanide-${element.number || `pos-${index}`}`}>
+                  <ElementTile
+                    element={element}
+                    onClick={() => setSelectedElement(element)}
+                  />
+                </div>
+              ))}
             </div>
-          </DialogContent>
+          </div>
         )}
-      </Dialog>
+
+        {/* Actinide series */}
+        {actinides.length > 0 && (
+          <div className="mt-4">
+            <div className="text-sm font-medium mb-2 pl-1">
+              Actinides (89-103)
+            </div>
+            <div className="grid grid-flow-col gap-1.5 auto-cols-[85px]">
+              {actinides.map((element, index) => (
+                <div key={`actinide-${element.number || `pos-${index}`}`}>
+                  <ElementTile
+                    element={element}
+                    onClick={() => setSelectedElement(element)}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <Dialog
+          open={!!selectedElement}
+          onOpenChange={() => setSelectedElement(null)}
+        >
+          {selectedElement && (
+            <DialogContent className="max-w-5xl max-h-[95vh] overflow-y-auto w-full">
+              <DialogHeader>
+                <div className="flex items-start gap-4">
+                  {selectedElement.image && (
+                    <div className="relative w-32 h-32 rounded-lg overflow-hidden border">
+                      <Image
+                        src={selectedElement.image.url}
+                        alt={selectedElement.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="space-y-2">
+                    <DialogTitle className="text-4xl flex items-center gap-2">
+                      {selectedElement.name}
+                      <span className="text-2xl opacity-70">
+                        ({selectedElement.symbol})
+                      </span>
+                    </DialogTitle>
+                    <div className="space-y-1">
+                      <DialogDescription className="flex items-center gap-2">
+                        <Atom className="w-4 h-4" />
+                        Atomic Number: {selectedElement.number}
+                      </DialogDescription>
+                      {selectedElement.source && (
+                        <DialogDescription>
+                          <Link
+                            href={selectedElement.source}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors"
+                          >
+                            <LinkIcon className="w-4 h-4" />
+                            View on Wikipedia
+                          </Link>
+                        </DialogDescription>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </DialogHeader>
+
+              <Separator className="my-4" />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Physical Properties */}
+                <Card className="p-4 space-y-4">
+                  <div className="flex items-center gap-2 font-semibold">
+                    <TestTube className="w-5 h-5" />
+                    Physical Properties
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <Scale className="w-4 h-4 opacity-70" />
+                      <div>
+                        <div className="text-sm opacity-70">Atomic Mass</div>
+                        <div className="font-medium">
+                          {selectedElement.atomic_mass
+                            ? selectedElement.atomic_mass.toFixed(4) + " u"
+                            : "N/A"}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <Beaker className="w-4 h-4 opacity-70" />
+                      <div>
+                        <div className="text-sm opacity-70">
+                          Phase at Room Temperature
+                        </div>
+                        <div className="font-medium capitalize">
+                          {selectedElement.phase || "N/A"}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <Gauge className="w-4 h-4 opacity-70" />
+                      <div>
+                        <div className="text-sm opacity-70">Density</div>
+                        <div className="font-medium">
+                          {selectedElement.density
+                            ? `${selectedElement.density} g/cm³`
+                            : "N/A"}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <Thermometer className="w-4 h-4 opacity-70" />
+                      <div>
+                        <div className="text-sm opacity-70">Melting Point</div>
+                        <div className="font-medium">
+                          {selectedElement.melt
+                            ? `${selectedElement.melt}°C`
+                            : "N/A"}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <Sun className="w-4 h-4 opacity-70" />
+                      <div>
+                        <div className="text-sm opacity-70">Boiling Point</div>
+                        <div className="font-medium">
+                          {selectedElement.boil
+                            ? `${selectedElement.boil}°C`
+                            : "N/A"}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Electronic Properties & Discovery */}
+                <div className="space-y-6">
+                  <Card className="p-4 space-y-4">
+                    <div className="flex items-center gap-2 font-semibold">
+                      <CircuitBoard className="w-5 h-5" />
+                      Electronic Properties
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <Atom className="w-4 h-4 opacity-70" />
+                        <div>
+                          <div className="text-sm opacity-70">
+                            Electron Configuration
+                          </div>
+                          <div className="font-medium">
+                            {selectedElement.electron_configuration || "N/A"}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-3">
+                        <Microscope className="w-4 h-4 opacity-70" />
+                        <div>
+                          <div className="text-sm opacity-70">
+                            Electronegativity
+                          </div>
+                          <div className="font-medium">
+                            {selectedElement.electronegativity_pauling || "N/A"}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+
+                  <Card className="p-4 space-y-4">
+                    <div className="flex items-center gap-2 font-semibold">
+                      <History className="w-5 h-5" />
+                      Discovery
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <User className="w-4 h-4 opacity-70" />
+                        <div>
+                          <div className="text-sm opacity-70">
+                            Discovered by
+                          </div>
+                          <div className="font-medium">
+                            {selectedElement.discovered_by || "N/A"}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Info className="w-4 h-4 opacity-70" />
+                        <div>
+                          <div className="text-sm opacity-70">Named by</div>
+                          <div className="font-medium">
+                            {selectedElement.named_by || "N/A"}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Calendar className="w-4 h-4 opacity-70" />
+                        <div>
+                          <div className="text-sm opacity-70">Discovery</div>
+                          <div className="font-medium">
+                            {selectedElement.discovered_by || "N/A"}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                </div>
+              </div>
+
+              {selectedElement.summary && (
+                <Card className="p-4 mt-6">
+                  <div className="flex items-center gap-2 font-semibold mb-3">
+                    <Info className="w-5 h-5" />
+                    Summary
+                  </div>
+                  <p className="text-sm leading-relaxed">
+                    {selectedElement.summary || "No summary available."}
+                  </p>
+                </Card>
+              )}
+            </DialogContent>
+          )}
+        </Dialog>
+      </div>
     </div>
   );
 }
