@@ -23,8 +23,8 @@ export interface Element {
   atomic_mass: number;
   boil: number | null;
   category: string;
-  density: number | null;
-  discovered_by: string | null;
+  density: number;
+  discovered_by: string;
   melt: number | null;
   molar_heat: number | null;
   named_by: string | null;
@@ -33,10 +33,6 @@ export interface Element {
   group: number;
   phase: string;
   source: string;
-  bohr_model_image: string | null;
-  bohr_model_3d: string | null;
-  spectral_img: string | null;
-  summary: string;
   symbol: string;
   xpos: number;
   ypos: number;
@@ -45,14 +41,11 @@ export interface Element {
   electron_configuration_semantic: string;
   electron_affinity: number | null;
   electronegativity_pauling: number | null;
-  ionization_energies: number[];
-  "cpk-hex": string;
-  image: {
+  image?: {
     title: string;
     url: string;
     attribution: string;
-  } | null;
-  block: string;
+  };
 }
 
 export interface PeriodicTableData {

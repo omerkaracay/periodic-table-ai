@@ -1,28 +1,12 @@
 import { elements } from "@/lib/data/PeriodicTable/data.json";
 import { QuizQuestion, QuizType, QuizProperty } from "@/lib/types/quiz";
+import { Element } from "@/lib/types/periodic-table";
 
 interface PhysicalProperty {
-  key: keyof ElementProperties;
+  key: keyof Element;
   name: string;
   unit: string;
   formatter?: (value: string | number | null) => string | number | null;
-}
-
-interface ElementProperties {
-  atomic_mass: number | null;
-  boil: number | null;
-  melt: number | null;
-  density: number | null;
-  molar_heat: number | null;
-  electron_affinity: number | null;
-  electronegativity_pauling: number | null;
-  name: string;
-  appearance?: string;
-  category?: string;
-  phase?: string;
-  electron_configuration?: string;
-  electron_configuration_semantic?: string;
-  shells?: number[];
 }
 
 function shuffleArray<T>(array: T[]): T[] {
@@ -44,7 +28,7 @@ function generateOptions(correctAnswer: string, count: number = 4): string[] {
   return shuffleArray(options);
 }
 
-function getPhysicalProperties(element: ElementProperties): QuizProperty[] {
+function getPhysicalProperties(element: Element): QuizProperty[] {
   const properties: PhysicalProperty[] = [
     { key: "atomic_mass", name: "Atomic Mass", unit: "u" },
     { key: "boil", name: "Boiling Point", unit: "K" },
@@ -67,29 +51,30 @@ function getPhysicalProperties(element: ElementProperties): QuizProperty[] {
       key: "category",
       name: "Category",
       unit: "",
-      formatter: (v) => (typeof v === "string" ? v : "Unknown"),
     },
     {
       key: "phase",
       name: "Phase",
       unit: "",
-      formatter: (v) => (typeof v === "string" ? v : "Unknown"),
     },
   ];
 
   return properties
     .map((prop) => {
       const value = element[prop.key];
+      const formattedValue = prop.formatter
+        ? prop.formatter(value as string | number | null)
+        : value;
       return {
         name: prop.name,
-        value: prop.formatter ? prop.formatter(value) : value ?? null,
+        value: formattedValue ?? "Unknown",
         unit: prop.unit,
       };
     })
     .filter((prop): prop is QuizProperty => prop.value !== null);
 }
 
-function formatElectronConfiguration(element: ElementProperties): string {
+function formatElectronConfiguration(element: Element): string {
   let config = "";
 
   if (element.electron_configuration_semantic) {
@@ -124,7 +109,9 @@ export function generateQuestions(
   switch (type) {
     case "atomic-number":
       for (let i = 0; i < count; i++) {
-        const element = elements[Math.floor(Math.random() * elements.length)];
+        const element = elements[
+          Math.floor(Math.random() * elements.length)
+        ] as Element;
         questions.push({
           type: "atomic-number",
           question: `Which element has the atomic number ${element.number}?`,
@@ -135,14 +122,18 @@ export function generateQuestions(
       break;
 
     case "visual":
-      // Filter elements with valid images
-      const elementsWithImages = elements.filter((e) => e.image?.url);
+      // Filter elements with valid images and exclude placeholder images
+      const elementsWithImages = (elements as Element[]).filter(
+        (e) => e.image?.url && !e.image.url.includes("/transactinoid.png")
+      );
 
       for (let i = 0; i < count && elementsWithImages.length > 0; i++) {
         const element =
           elementsWithImages[
             Math.floor(Math.random() * elementsWithImages.length)
           ];
+
+        if (!element.image) continue; // TypeScript guard
 
         questions.push({
           type: "visual",
@@ -157,7 +148,9 @@ export function generateQuestions(
 
     case "electron-configuration":
       for (let i = 0; i < count; i++) {
-        const element = elements[Math.floor(Math.random() * elements.length)];
+        const element = elements[
+          Math.floor(Math.random() * elements.length)
+        ] as Element;
         const formattedConfig = formatElectronConfiguration(element);
 
         questions.push({
@@ -186,7 +179,7 @@ export function generateQuestions(
       for (let i = 0; i < count; i++) {
         const element = elements[
           Math.floor(Math.random() * elements.length)
-        ] as ElementProperties;
+        ] as Element;
         const properties = getPhysicalProperties(element);
 
         if (properties.length < 3) continue; // Ensure we have at least 3 properties to show
