@@ -24,6 +24,9 @@ export function ElementModel3D({ modelUrl }: ElementModel3DProps) {
 
   return (
     <div style={{ width: "300px", height: "300px" }}>
+      <div className="flex p-4">
+        <p className="text-sm font-light">Bohr Model</p>
+      </div>
       <Canvas>
         <Stage environment="city" intensity={0.6}>
           <Model url={modelUrl} />
