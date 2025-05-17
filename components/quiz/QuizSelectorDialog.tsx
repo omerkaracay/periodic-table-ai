@@ -17,7 +17,7 @@ export function QuizSelectorDialog({
 }: QuizSelectorDialogProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[600px]">
+      <DialogContent className="sm:max-w-[600px] backdrop-blur-md bg-background/95 border-none">
         <DialogHeader>
           <DialogTitle className="text-center text-2xl">
             Please select a quiz type

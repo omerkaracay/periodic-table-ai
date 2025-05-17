@@ -7,7 +7,11 @@ import { Brain } from "lucide-react";
 import { useState } from "react";
 import { QuizSelectorDialog } from "../quiz/QuizSelectorDialog";
 
-export function Dashboard() {
+interface DashboardProps {
+  onQuizOpen: () => void;
+}
+
+export function Dashboard({ onQuizOpen }: DashboardProps) {
   const elements = periodicTableData.elements as Element[];
   const [isQuizOpen, setIsQuizOpen] = useState(false);
 
@@ -58,11 +62,7 @@ export function Dashboard() {
           Challenge yourself with our periodic table quiz and learn about
           chemical elements in a fun way!
         </p>
-        <Button
-          className="mt-auto"
-          size="lg"
-          onClick={() => setIsQuizOpen(true)}
-        >
+        <Button className="mt-auto" size="lg" onClick={onQuizOpen}>
           <Brain className="mr-2" />
           Start Quiz
         </Button>
