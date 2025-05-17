@@ -10,7 +10,6 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Card } from "@/components/ui/card";
-import { Dashboard } from "./Dashboard";
 import { Separator } from "@/components/ui/separator";
 import {
   Atom,
@@ -31,6 +30,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { ElementTile } from "./ElementTile";
+import { ElementModel3D } from "./ElementModel3D";
 
 interface PeriodicTableProps {
   selectedCategory: string | null;
@@ -112,9 +112,6 @@ export function PeriodicTable({
         {/* Lanthanide series */}
         {lanthanides.length > 0 && (
           <div className="mt-8">
-            <div className="text-sm font-medium mb-3 pl-1">
-              Lanthanides (57-71)
-            </div>
             <div className="grid grid-flow-col gap-2 auto-cols-[75px]">
               {lanthanides.map((element, index) => (
                 <div key={`lanthanide-${element.number || `pos-${index}`}`}>
@@ -131,9 +128,6 @@ export function PeriodicTable({
         {/* Actinide series */}
         {actinides.length > 0 && (
           <div className="mt-6">
-            <div className="text-sm font-medium mb-3 pl-1">
-              Actinides (89-103)
-            </div>
             <div className="grid grid-flow-col gap-2 auto-cols-[75px]">
               {actinides.map((element, index) => (
                 <div key={`actinide-${element.number || `pos-${index}`}`}>
@@ -164,6 +158,16 @@ export function PeriodicTable({
                         fill
                         className="object-cover"
                       />
+                    </div>
+                  )}
+                  {selectedElement.bohr_model_3d && (
+                    <div className="mt-4">
+                      <h3 className="text-sm font-medium mb-2">Bohr Model</h3>
+                      <div className="border rounded-lg overflow-hidden">
+                        <ElementModel3D
+                          modelUrl={selectedElement.bohr_model_3d}
+                        />
+                      </div>
                     </div>
                   )}
                 </div>
