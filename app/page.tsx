@@ -11,14 +11,14 @@ export default function Home() {
   const [selectedState, setSelectedState] = useState<string | null>(null);
 
   return (
-    <main className="min-h-screen p-4 md:p-8 bg-background">
-      <div className="max-w-[1400px] mx-auto space-y-8">
+    <main className="min-h-screen p-6 md:p-10 bg-background">
+      <div className="max-w-[1800px] mx-auto space-y-10">
         <div className="flex items-center justify-between">
           <h1 className="text-4xl font-bold tracking-tight">Periodic Table</h1>
           <ThemeToggle />
         </div>
 
-        <Card className="p-4">
+        <Card className="p-6">
           <ElementFilters
             selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
@@ -27,7 +27,7 @@ export default function Home() {
           />
         </Card>
 
-        <Card className="p-4 overflow-x-auto">
+        <Card className="p-6 overflow-x-auto">
           <PeriodicTable
             selectedCategory={selectedCategory}
             selectedState={selectedState}

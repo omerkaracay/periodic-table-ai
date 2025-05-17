@@ -1,4 +1,4 @@
-import periodicTableData from "@/lib/data/periodic-table.json";
+import { categories, phases } from "@/lib/data/PeriodicTable/categories.json";
 import { Badge } from "@/components/ui/badge";
 
 interface ElementFiltersProps {
@@ -14,9 +14,6 @@ export function ElementFilters({
   selectedState,
   setSelectedState,
 }: ElementFiltersProps) {
-  const categories = periodicTableData.categories;
-  const states = ["solid", "liquid", "gas"];
-
   const getCategoryColor = (category: string): string => {
     const colors: Record<string, string> = {
       "alkali metal":
@@ -45,11 +42,11 @@ export function ElementFilters({
 
   const getStateColor = (state: string): string => {
     const colors: Record<string, string> = {
-      solid:
+      Solid:
         "bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700",
-      liquid:
+      Liquid:
         "bg-sky-100 hover:bg-sky-200 dark:bg-sky-900 dark:hover:bg-sky-800",
-      gas: "bg-violet-100 hover:bg-violet-200 dark:bg-violet-900 dark:hover:bg-violet-800",
+      Gas: "bg-violet-100 hover:bg-violet-200 dark:bg-violet-900 dark:hover:bg-violet-800",
     };
     return colors[state] || "";
   };
@@ -89,26 +86,26 @@ export function ElementFilters({
       <div>
         <h3 className="text-lg font-medium mb-3">State at Room Temperature</h3>
         <div className="flex flex-wrap gap-2">
-          {states.map((state) => (
+          {phases.map((phase) => (
             <Badge
-              key={state}
+              key={phase}
               variant="outline"
               className={`
-                cursor-pointer px-3 py-1 text-sm capitalize transition-all duration-200
+                cursor-pointer px-3 py-1 text-sm transition-all duration-200
                 ${
-                  selectedState === state
+                  selectedState === phase
                     ? "ring-2 ring-primary scale-110 shadow-lg"
                     : selectedState
                     ? "opacity-50 scale-95"
                     : "hover:scale-105"
                 }
-                ${getStateColor(state)}
+                ${getStateColor(phase)}
               `}
               onClick={() =>
-                setSelectedState(selectedState === state ? null : state)
+                setSelectedState(selectedState === phase ? null : phase)
               }
             >
-              {state}
+              {phase}
             </Badge>
           ))}
         </div>

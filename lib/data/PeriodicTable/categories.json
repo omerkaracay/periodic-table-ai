@@ -1,0 +1,16 @@
+{
+  "categories": [
+    "alkali metal",
+    "alkaline earth metal",
+    "lanthanide",
+    "actinide",
+    "transition metal",
+    "post-transition metal",
+    "metalloid",
+    "diatomic nonmetal",
+    "nonmetal",
+    "noble gas",
+    "unknown"
+  ],
+  "phases": ["Solid", "Liquid", "Gas"]
+}

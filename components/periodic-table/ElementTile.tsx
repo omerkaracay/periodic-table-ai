@@ -21,30 +21,25 @@ export function ElementTile({ element, onClick }: ElementTileProps) {
       <TooltipTrigger asChild>
         <Card
           className={`
-            relative w-[85px] h-[85px] p-2 cursor-pointer
+            relative w-[75px] h-[75px] p-2 cursor-pointer
             hover:scale-105 hover:z-10 hover:shadow-xl
             transition-all duration-200 ease-in-out
-            flex flex-col items-stretch
+            grid grid-rows-[auto,1fr,auto] gap-0.5
             ${getCategoryColor(element.category)}
           `}
           onClick={onClick}
         >
           {/* Atomic Number */}
-          <div className="text-xs font-medium">{element.number}</div>
+          <div className="text-[11px] font-medium">{element.number}</div>
 
           {/* Symbol and Mass */}
-          <div className="flex-1 flex flex-col items-center justify-center -mt-1">
-            <div className="text-2xl font-bold tracking-tight">
+          <div className="flex flex-col items-center justify-center">
+            <div className="text-xl font-bold leading-none mb-1">
               {element.symbol}
             </div>
-            <div className="text-[10px] font-medium opacity-80">
+            <div className="text-[9px] font-medium opacity-80 leading-none">
               {formattedAtomicMass}
             </div>
-          </div>
-
-          {/* Element Name */}
-          <div className="text-[9px] font-medium text-center truncate w-full">
-            {element.name}
           </div>
         </Card>
       </TooltipTrigger>
