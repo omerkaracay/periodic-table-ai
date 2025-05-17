@@ -1,5 +1,6 @@
 import { categories, phases } from "@/lib/data/PeriodicTable/categories.json";
 import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 
 interface ElementFiltersProps {
   selectedCategory: string | null;
@@ -52,19 +53,19 @@ export function ElementFilters({
   };
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h3 className="text-lg font-medium mb-3">Categories</h3>
-        <div className="flex flex-wrap gap-2">
+    <div className="grid grid-cols-2 gap-4 w-full max-w-2xl">
+      <Card className="p-4">
+        <h3 className="text-sm font-medium mb-3">Categories</h3>
+        <div className="flex flex-wrap gap-1.5 min-h-[120px]">
           {categories.map((category) => (
             <Badge
               key={category}
               variant="outline"
               className={`
-                cursor-pointer px-3 py-1 text-sm transition-all duration-200
+                cursor-pointer px-2 py-0.5 text-xs transition-all duration-200
                 ${
                   selectedCategory === category
-                    ? "ring-2 ring-primary scale-110 shadow-lg"
+                    ? "ring-2 ring-primary scale-105 shadow-lg"
                     : selectedCategory
                     ? "opacity-50 scale-95"
                     : "hover:scale-105"
@@ -81,20 +82,20 @@ export function ElementFilters({
             </Badge>
           ))}
         </div>
-      </div>
+      </Card>
 
-      <div>
-        <h3 className="text-lg font-medium mb-3">State at Room Temperature</h3>
-        <div className="flex flex-wrap gap-2">
+      <Card className="p-4">
+        <h3 className="text-sm font-medium mb-3">State at Room Temperature</h3>
+        <div className="flex flex-wrap gap-1.5 ">
           {phases.map((phase) => (
             <Badge
               key={phase}
               variant="outline"
               className={`
-                cursor-pointer px-3 py-1 text-sm transition-all duration-200
+                cursor-pointer px-2 py-0.5 text-xs transition-all duration-200
                 ${
                   selectedState === phase
-                    ? "ring-2 ring-primary scale-110 shadow-lg"
+                    ? "ring-2 ring-primary scale-105 shadow-lg"
                     : selectedState
                     ? "opacity-50 scale-95"
                     : "hover:scale-105"
@@ -109,7 +110,7 @@ export function ElementFilters({
             </Badge>
           ))}
         </div>
-      </div>
+      </Card>
     </div>
   );
 }

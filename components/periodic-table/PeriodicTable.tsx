@@ -81,11 +81,11 @@ export function PeriodicTable({
   });
 
   return (
-    <div className="w-full overflow-auto bg-background">
-      <div className="min-w-[850px] max-w-[1275px] mx-auto p-6">
+    <div className="w-full bg-background">
+      <div className="min-w-[850px]  mx-auto p-6 flex flex-col items-center">
         {/* Main periodic table grid */}
         <div
-          className="grid gap-2"
+          className="grid gap-2 w-fit mx-auto"
           style={{
             gridTemplateColumns: `repeat(${maxGroup}, minmax(75px, 1fr))`,
           }}
