@@ -4,9 +4,12 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Brain } from "lucide-react";
+import { useState } from "react";
+import { QuizSelectorDialog } from "../quiz/QuizSelectorDialog";
 
 export function Dashboard() {
   const elements = periodicTableData.elements as Element[];
+  const [isQuizOpen, setIsQuizOpen] = useState(false);
 
   // Calculate phase distribution
   const phaseDistribution = elements.reduce((acc, element) => {
@@ -55,11 +58,20 @@ export function Dashboard() {
           Challenge yourself with our periodic table quiz and learn about
           chemical elements in a fun way!
         </p>
-        <Button className="mt-auto" size="lg">
+        <Button
+          className="mt-auto"
+          size="lg"
+          onClick={() => setIsQuizOpen(true)}
+        >
           <Brain className="mr-2" />
           Start Quiz
         </Button>
       </Card>
+
+      <QuizSelectorDialog
+        isOpen={isQuizOpen}
+        onClose={() => setIsQuizOpen(false)}
+      />
     </div>
   );
 }
