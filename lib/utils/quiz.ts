@@ -1,4 +1,4 @@
-import { elements } from "@/lib/data/PeriodicTable/data.json";
+import { elements } from "@/lib/data/PeriodicTable";
 import { QuizQuestion, QuizType, QuizProperty } from "@/lib/types/quiz";
 import { Element } from "@/lib/types/periodic-table";
 

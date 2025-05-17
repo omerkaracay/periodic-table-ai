@@ -1,4 +1,4 @@
-import { categories, phases } from "@/lib/data/PeriodicTable/categories.json";
+import { categories, phases } from "@/lib/data/PeriodicTable/categories";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 
