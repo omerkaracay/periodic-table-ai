@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import periodicTableData from "@/lib/data/periodic-table-list.json";
+import periodicTableData from "@/lib/data/PeriodicTable/data.json";
 import { Element } from "@/lib/types/periodic-table";
-import Image from "next/image";
 
 export function Dashboard() {
   const elements = periodicTableData.elements as Element[];
@@ -10,12 +9,6 @@ export function Dashboard() {
   const phaseDistribution = elements.reduce((acc, element) => {
     const phase = element.phase;
     acc[phase] = (acc[phase] || 0) + 1;
-    return acc;
-  }, {} as Record<string, number>);
-
-  const categoryDistribution = elements.reduce((acc, element) => {
-    const category = element.category;
-    acc[category] = (acc[category] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
 
@@ -29,9 +22,6 @@ export function Dashboard() {
     acc[block] = (acc[block] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
-
-  // Find elements with images for the gallery
-  const elementsWithImages = elements.filter((el) => el.image?.url).slice(0, 4);
 
   return (
     <div className="space-y-6 mb-8">
@@ -107,32 +97,6 @@ export function Dashboard() {
       </div>
 
       {/* Element Gallery */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-sm font-medium">
-            Featured Elements
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {elementsWithImages.map((element) => (
-              <div key={element.number} className="space-y-2">
-                <div className="relative w-full h-24 rounded-md overflow-hidden">
-                  <Image
-                    src={element.image!.url}
-                    alt={element.image!.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="text-xs font-medium text-center">
-                  {element.name}
-                </div>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
     </div>
   );
 }
