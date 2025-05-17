@@ -162,7 +162,6 @@ export function PeriodicTable({
                   )}
                   {selectedElement.bohr_model_3d && (
                     <div className="mt-4">
-                      <h3 className="text-sm font-medium mb-2">Bohr Model</h3>
                       <div className="border rounded-lg overflow-hidden">
                         <ElementModel3D
                           modelUrl={selectedElement.bohr_model_3d}
@@ -189,10 +188,8 @@ export function PeriodicTable({
                         Atomic Number: {selectedElement.number}
                       </DialogDescription>
 
-                      <DialogDescription>
-                        <p className="text-sm leading-relaxed">
-                          {selectedElement.summary || "No summary available."}
-                        </p>
+                      <DialogDescription className="text-sm leading-relaxed">
+                        {selectedElement.summary || "No summary available."}
                       </DialogDescription>
 
                       {selectedElement.source && (

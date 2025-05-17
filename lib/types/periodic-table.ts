@@ -46,6 +46,8 @@ export interface Element {
     url: string;
     attribution: string;
   };
+  bohr_model_3d?: string;
+  summary?: string;
 }
 
 export interface PeriodicTableData {
