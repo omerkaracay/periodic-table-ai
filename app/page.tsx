@@ -7,6 +7,7 @@ import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { Card } from "@/components/ui/card";
 import { Dashboard } from "@/components/periodic-table/Dashboard";
 import { QuizSelectorDialog } from "@/components/quiz/QuizSelectorDialog";
+import { SpaceRain } from "@/components/background/SpaceRain";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,9 +16,11 @@ export default function Home() {
   const [isQuizOpen, setIsQuizOpen] = useState(false);
 
   return (
-    <main className="min-h-screen p-6 md:p-10 bg-background">
+    <main className="relative min-h-screen p-6 md:p-10 bg-background overflow-hidden">
+      <SpaceRain count={30} minDuration={4} maxDuration={8} />
+
       <div
-        className={`max-w-[1800px] mx-auto space-y-8 transition-all duration-200 ${
+        className={`relative z-10 max-w-[1800px] mx-auto space-y-8 transition-all duration-200 ${
           isQuizOpen ? "blur-sm" : ""
         }`}
       >
@@ -50,7 +53,7 @@ export default function Home() {
           <Dashboard onQuizOpen={() => setIsQuizOpen(true)} />
         </div>
 
-        <Card className="p-6 overflow-x-auto">
+        <Card className="p-6 overflow-x-auto backdrop-blur-sm bg-background/80">
           <PeriodicTable
             selectedCategory={selectedCategory}
             selectedState={selectedState}
