@@ -24,7 +24,7 @@ A modern, interactive periodic table application with 3D Bohr Models and educati
 
 ## 🛠️ Technologies
 
-- [Next.js 14](https://nextjs.org/)
+- [Next.js 15](https://nextjs.org/)
 - [React 19](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
