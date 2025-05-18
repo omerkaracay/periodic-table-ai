@@ -6,9 +6,10 @@ import { QuizType } from "@/lib/types/quiz";
 interface QuizButtonProps {
   type: QuizType;
   label: string;
+  icon: React.ReactNode;
 }
 
-export function QuizButton({ type, label }: QuizButtonProps) {
+export function QuizButton({ type, label, icon }: QuizButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const settings = {
@@ -22,8 +23,9 @@ export function QuizButton({ type, label }: QuizButtonProps) {
       <Button
         onClick={() => setIsOpen(true)}
         variant="outline"
-        className="w-full"
+        className="w-full h-12"
       >
+        {icon}
         {label}
       </Button>
 
