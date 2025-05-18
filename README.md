@@ -6,7 +6,7 @@ A modern, interactive periodic table application with 3D Bohr Models and educati
 
 ## 🖥️ Demo
 
-- [Live Demo](https://.vercel.app)
+- [Live Demo](https://periodic-table-ai.vercel.app)
 
 ## ✨ Features
 
