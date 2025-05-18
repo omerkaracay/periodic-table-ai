@@ -1,6 +1,6 @@
 # 🧪 Interactive Periodic Table
 
-![Periodic Table Preview](https://raw.githubusercontent.com/omerkaracay/periodic-table-ai/Screenshot-1.png)
+![Periodic Table Preview](https://raw.githubusercontent.com/omerkaracay/periodic-table-ai/main/Screenshot-1.png)
 
 A modern, interactive periodic table application with 3D Bohr Models and educational features. Built with Next.js and customized shadcn/ui components, it provides an engaging way to learn about chemical elements.
 
@@ -20,7 +20,7 @@ A modern, interactive periodic table application with 3D Bohr Models and educati
 - 💫 Smooth animations and transitions
 - 🔎 Detailed modal view for each element
 
-![Periodic Table Preview](https://raw.githubusercontent.com/omerkaracay/periodic-table-ai/Screenshot-2.png)
+![Periodic Table Preview](https://raw.githubusercontent.com/omerkaracay/periodic-table-ai/main/Screenshot-2.png)
 
 ## 🛠️ Technologies
 
@@ -36,7 +36,7 @@ A modern, interactive periodic table application with 3D Bohr Models and educati
 1. Clone the project:
 
 ```bash
-git clone https://github.com/yourusername/periodic-table-ai.git
+git clone https://github.com/omerkaracay/periodic-table-ai.git
 cd periodic-table-ai
 ```
 
