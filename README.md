@@ -1,71 +1,112 @@
-# Interactive Periodic Table
+# 🧪 Interactive Periodic Table
 
-A modern, interactive periodic table application built with Next.js and Shadcn UI. This application provides a beautiful, Apple-inspired interface for exploring the periodic table of elements.
+![Periodic Table Preview](https://raw.githubusercontent.com/omerkaracay/periodic-table-ai/Screenshot-1.png)
 
-## Features
+A modern, interactive periodic table application with 3D Bohr Models and educational features. Built with Next.js and customized shadcn/ui components, it provides an engaging way to learn about chemical elements.
 
-- Complete, accurate periodic table layout
-- Interactive element tiles with hover information
-- Detailed modal view for each element
-- Advanced filtering by element category and state
-- Responsive design for all devices
-- Light and dark mode support
-- Smooth animations and transitions
-- Modern, minimalist Apple-inspired design
+## 🖥️ Demo
 
-## Technologies Used
+- [Live Demo](https://.vercel.app)
 
-- Next.js 14
-- React 19
-- TypeScript
-- Tailwind CSS
-- Shadcn UI
-- next-themes
+## ✨ Features
 
-## Getting Started
+- 📊 Complete, accurate periodic table layout
+- 🎯 Interactive 3D Bohr Model visualization
+- 📚 Educational quiz system for learning
+- 🔍 Interactive element tiles with hover information
+- 📱 Responsive design for all screen sizes
+- 🌓 Light and dark mode support
+- ⚡ Advanced filtering by element category and state
+- 💫 Smooth animations and transitions
+- 🔎 Detailed modal view for each element
 
-1. Clone the repository:
+![Periodic Table Preview](https://raw.githubusercontent.com/omerkaracay/periodic-table-ai/Screenshot-2.png)
+
+## 🛠️ Technologies
+
+- [Next.js 14](https://nextjs.org/)
+- [React 19](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Customized shadcn/ui](https://ui.shadcn.com/)
+- [next-themes](https://github.com/pacocoursey/next-themes)
+
+## 📦 Installation
+
+1. Clone the project:
 
 ```bash
 git clone https://github.com/yourusername/periodic-table-ai.git
+cd periodic-table-ai
 ```
 
 2. Install dependencies:
 
 ```bash
-cd periodic-table-ai
 npm install
 ```
 
-3. Run the development server:
+3. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open in your browser:
+   [http://localhost:3000](http://localhost:3000)
 
-## Element Data
+## 📝 Usage
 
-The application includes comprehensive data for each element:
+The periodic table application provides comprehensive data for each element:
 
-- Atomic number
-- Symbol
-- Name
-- Atomic weight
-- Category
-- State at room temperature
-- Electron configuration
-- Electronegativity
-- Density
-- Melting and boiling points
-- Discovery information
-- Common uses
+| Property      | Description                      |
+| ------------- | -------------------------------- |
+| Atomic Number | Element's unique identifier      |
+| Symbol        | Chemical symbol                  |
+| Name          | Full element name                |
+| Atomic Weight | Standard atomic weight           |
+| Category      | Chemical category                |
+| State         | State at room temperature        |
+| Configuration | Electron configuration           |
+| Properties    | Electronegativity, density, etc. |
+| History       | Discovery information            |
+| Applications  | Common uses and applications     |
 
-## Contributing
+## 🎨 UI Components
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Our project uses customized shadcn/ui components, providing:
 
-## License
+- Custom themed components
+- Responsive design patterns
+- Accessible UI elements
+- Smooth animations
+- Dark/light mode variants
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🐛 Known Issues
+
+No issues have been reported yet. If you encounter any problems, please feel free to report them.
+
+## 🤝 Contributing
+
+This project was created for the \* Hackathon. Contributions, forks, and pull requests are welcome! If you have ideas for improvements or find any bugs, please open an issue.
+
+Made with ❤️ for the \* Hackathon.
+
+## 📄 License
+
+This project is licensed under the MIT License. See `LICENSE` for more information.
+
+## 👨‍💻 Developer
+
+Ömer Karaçay - [karacay.fi](https://karacay.fi)
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- And all other open-source libraries used in this project
+
+---
+
+\* The hackathon name will be updated after the event.
