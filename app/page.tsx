@@ -43,7 +43,7 @@ export default function Home() {
           <ThemeToggle />
         </div>
 
-        <div className="flex justify-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <ElementFilters
             selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}

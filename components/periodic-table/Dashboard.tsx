@@ -29,7 +29,7 @@ export function Dashboard({ onQuizOpen }: DashboardProps) {
   ).toFixed(2);
 
   return (
-    <div className="grid grid-cols-2 gap-4 w-full max-w-2xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
       <Card className="p-4">
         <h3 className="text-sm font-medium mb-1">Element Statistics</h3>
         <div className="space-y-0">

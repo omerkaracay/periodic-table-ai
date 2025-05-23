@@ -53,7 +53,7 @@ export function ElementFilters({
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4 w-full max-w-2xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
       <Card className="p-4">
         <h3 className="text-sm font-medium mb-3">Categories</h3>
         <div className="flex flex-wrap gap-1.5 min-h-[120px]">
